@@ -3,6 +3,28 @@
   --white: #fff
 }
 
+.layout-grid {
+  display: grid;
+  grid-column-gap: 1rem;
+  grid-auto-rows: min-content;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "section-1 section-2"
+    "section-3 section-4";
+}
+
+@media screen and (max-width: 1000px) {
+  .layout-grid {
+    grid-column-gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "section-1"
+      "section-2"
+      "section-3"
+      "section-4";
+  }
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
