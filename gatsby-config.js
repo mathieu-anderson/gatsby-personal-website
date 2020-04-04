@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Mathieu Anderson is a web dev`,
+    description: `Mathieu Anderson is a front-end web dev. You can find everything you want to know about him here! Mostly links to other websites though.`,
+    author: `@syllaband`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `mathieu-anderson-personal-website`,
+        short_name: `mathieu`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
