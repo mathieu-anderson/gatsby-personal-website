@@ -1,5 +1,4 @@
 .box-container {
-  font-family: Lato,Helvetica,Arial,sans-serif;
   padding: 0 1em .7em 1em;
   border: 2px solid var(--black);
   box-shadow: 10px 15px 0 var(--black);
@@ -11,7 +10,6 @@
 
 .box-heading {
   color: var(--black);
-  font-family: Bitter,Helvetica,sans-serif;
   text-align: center;
   padding: 0.5rem;
   border-bottom: 2px solid var(--black);
