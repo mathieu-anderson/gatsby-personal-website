@@ -1,0 +1,37 @@
+svg {
+  fill: var(--black)
+}
+
+svg:hover.linkedin {
+  transition: 0.3s all;
+  fill: #2867b2
+}
+
+svg:hover.twitter {
+  transition: 0.3s all;
+  fill: #00acee
+}
+
+svg:hover.medium {
+  transition: 0.3s all;
+  fill: #00AB6B
+}
+
+svg:hover.github {
+  transition: 0.3s all;
+  fill: #1b1f23
+}
+
+.icon {
+  height: 1.5rem;
+  color: var(--black)
+}
+
+.icon-flip:hover {
+ animation: flip 0.3s;
+}
+
+@keyframes flip {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
