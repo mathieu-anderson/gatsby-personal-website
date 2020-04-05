@@ -9,3 +9,50 @@
 a:first-of-type {
   margin-left: 0;
 }
+
+button {
+  text-align: left;
+  background-color: unset;
+  border: unset;
+  padding: unset;
+}
+
+header-title:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+.enthusiastic:active {
+  animation: rumble .0625s infinite linear;
+}
+.openminded:active {
+  animation: lift 0.7s;
+}
+
+.curious:active {
+  animation: floaty 1.3s infinite linear;
+}
+
+
+@keyframes rumble {
+  0% {transform: rotate(0deg);}
+  25% {transform: translate(3px, 0px);}
+  50% {transform: translate(0px, -3px);}
+  75% {transform: translate(-3px, 0px);}
+  500% {transform: translate(0px, 3px);}
+}
+
+@keyframes lift {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(-10px);}
+  100% {transform: translate(0px);}
+}
+
+@keyframes floaty {
+  from { transform: rotate(0deg) translateX(5px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+}
