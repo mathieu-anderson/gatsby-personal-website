@@ -25,10 +25,14 @@ const getNextQualifiers = previousQualifier => {
 const Header = () => {
   const initialQualifier = {
     index: null,
-    className: "",
+    adjectiveClassName: "",
     adjective: "a",
   }
-  const [qualifier, setQualifier] = React.useState(initialQualifier)
+  // Only activate the nudging wiggle until a user has clicked the title
+  const [qualifier, setQualifier] = React.useState({
+    ...initialQualifier,
+    adjectiveClassName: "nudge",
+  })
   const [previousQualifier, setPreviousQualifier] = React.useState(null)
 
   const { adjectiveClassName, adjective } = qualifier

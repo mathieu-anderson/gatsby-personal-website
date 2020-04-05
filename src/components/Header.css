@@ -17,7 +17,11 @@ button {
   padding: unset;
 }
 
-header-title:hover {
+.header-title {
+  width: fit-content;
+}
+
+.header-title:hover {
   cursor: pointer;
 }
 
@@ -25,6 +29,9 @@ button:hover {
   cursor: pointer;
 }
 
+.nudge:hover {
+  animation: wiggle 0.1s;
+}
 
 .enthusiastic:active {
   animation: rumble .0625s infinite linear;
@@ -37,9 +44,15 @@ button:hover {
   animation: floaty 1.3s infinite linear;
 }
 
+@keyframes wiggle {
+  0% {transform: translateX(0px);}
+  25% {transform: translateX(-3px);}
+  50% {transform: translateX(0px);}
+  75% {transform: translateX(3px);}
+  100% {transform: translateX(0px);}
+}
 
 @keyframes rumble {
-  0% {transform: rotate(0deg);}
   25% {transform: translate(3px, 0px);}
   50% {transform: translate(0px, -3px);}
   75% {transform: translate(-3px, 0px);}
