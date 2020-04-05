@@ -1,6 +1,6 @@
 :root {
   --black: #333;
-  --white: #fff
+  --white: #fff;
 }
 
 .layout-grid {
@@ -227,7 +227,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: var(--black);
   font-family: Lato, sans-serif;
   font-weight: normal;
   word-wrap: break-word;
