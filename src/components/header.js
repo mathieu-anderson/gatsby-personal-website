@@ -39,11 +39,12 @@ const Header = () => {
 
   return (
     <header className="header-parent">
-      <h1 className={`header-title ${adjectiveClassName}`}>
+      <h1 className={`header-title`}>
         {
           //Button inside of h1 for a11y purpose (no event on non-interactive element)
         }
         <button
+          className={adjectiveClassName}
           onMouseDown={() => {
             setQualifier(getNextQualifiers(previousQualifier))
           }}

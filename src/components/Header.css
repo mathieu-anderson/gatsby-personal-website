@@ -13,8 +13,9 @@ a:first-of-type {
 button {
   text-align: left;
   background-color: unset;
-  border: unset;
-  padding: unset;
+  border: 0;
+  outline: 0;
+  padding: 0;
 }
 
 .header-title {
@@ -34,13 +35,17 @@ button:hover {
 }
 
 .enthusiastic:active {
+  color: #E17701;
   animation: rumble .0625s infinite linear;
 }
+
 .openminded:active {
+  color: #6241C7;
   animation: lift 0.7s;
 }
 
 .curious:active {
+  color: #10A674;
   animation: floaty 1.3s infinite linear;
 }
 
