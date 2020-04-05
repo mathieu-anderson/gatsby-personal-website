@@ -10,8 +10,8 @@ const IndexPage = () => (
     <Box className="Section-1" heading="What I do">
       <p>
         I am a <b>front-end</b> specialist. I love being part of
-        cross-functional teams and being the <b>logical glue</b>
-        between the back-end devs and the designers.
+        cross-functional teams and being the <b>logical glue</b> between the
+        back-end devs and the designers.
       </p>
       <p>
         My favourite tool is currently <b>React</b>, but I love anything that
@@ -25,7 +25,7 @@ const IndexPage = () => (
       </p>{" "}
     </Box>
     <Box className="Section-2" heading="How I get it done">
-      Indeed it is
+      To be continued
     </Box>
     <Box className="Section-3" heading="Where I did it">
       Indeed it is
