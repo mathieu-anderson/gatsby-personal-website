@@ -1,16 +1,17 @@
 import React from "react"
+import "./useWhimsy.css"
 
 const useWhimsy = () => {
   const qualifiers = [
     {
       index: 0,
-      adjectiveClassName: "curious",
-      adjective: "a curious",
+      adjectiveClassName: "enthusiastic",
+      adjective: "an enthusiastic",
     },
     {
       index: 1,
-      adjectiveClassName: "enthusiastic",
-      adjective: "an enthusiastic",
+      adjectiveClassName: "curious",
+      adjective: "a curious",
     },
     {
       index: 2,
@@ -50,19 +51,6 @@ const useWhimsy = () => {
     setQualifier(initialQualifier)
   }
 
-  // Need to figure out how to make this one work!
-  const WhimsyContainer = ({ children }) => {
-    return (
-      <button
-        className={adjectiveClassName}
-        onMouseDown={activateWhimsy}
-        onMouseUp={deactivateWhimsy}
-      >
-        {children}
-      </button>
-    )
-  }
-
   const { adjectiveClassName, adjective } = qualifier
 
   return {
@@ -75,3 +63,17 @@ const useWhimsy = () => {
 }
 
 export default useWhimsy
+
+// Need to figure out how to make this one work!
+export const WhimsyContainer = ({ children }) => {
+  const { adjectiveClassName, activateWhimsy, deactivateWhimsy } = useWhimsy()
+  return (
+    <button
+      className={adjectiveClassName}
+      onMouseDown={activateWhimsy}
+      onMouseUp={deactivateWhimsy}
+    >
+      {children}
+    </button>
+  )
+}
