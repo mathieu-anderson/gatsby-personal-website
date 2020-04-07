@@ -1,8 +1,22 @@
 import React from "react"
+import {
+  TypeScriptIcon,
+  ReactIcon,
+  ReduxIcon,
+  WebpackIcon,
+  GitIcon,
+  DockerIcon,
+  JavaScriptIcon,
+  SassIcon,
+  NodeIcon,
+  CssIcon,
+  CircleCiIcon,
+} from "../components/Icons"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Box from "../components/Box"
+import Pill from "../components/Pill"
 
 const IndexPage = () => (
   <Layout>
@@ -25,7 +39,19 @@ const IndexPage = () => (
       </p>{" "}
     </Box>
     <Box className="Section-2" heading="How I get it done">
-      To be continued
+      <div className="pills-container">
+        <Pill name="JavaScript" icon={<JavaScriptIcon />} />
+        <Pill name="TypeScript" icon={<TypeScriptIcon />} />
+        <Pill name="React" icon={<ReactIcon />} />
+        <Pill name="Redux" icon={<ReduxIcon />} />
+        <Pill name="CSS" icon={<CssIcon />} />
+        <Pill name="Sass" icon={<SassIcon />} />
+        <Pill name="Node" icon={<NodeIcon />} />
+        <Pill name="Webpack" icon={<WebpackIcon />} />
+        <Pill name="Docker" icon={<DockerIcon />} />
+        <Pill name="Git" icon={<GitIcon />} />
+        <Pill name="CircleCi" icon={<CircleCiIcon />} />
+      </div>
     </Box>
     <Box className="Section-3" heading="Where I did it">
       Indeed it is

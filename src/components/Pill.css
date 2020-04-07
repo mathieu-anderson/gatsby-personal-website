@@ -1,0 +1,215 @@
+
+.pill {
+  display: flex;
+  flex-direction: row nowrap;
+  align-items: center;
+  padding: 0.2em;
+  width: fit-content;
+  transition: 0.2s all;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0.4rem;
+}
+
+.pill-name {
+  padding-left: 0.5em;
+  font-size: 1.1rem
+}
+
+.typescript-pill {
+  border: 3px solid var(--black);
+  background-color: var(--white)
+}
+.typescript-pill .typescript-icon {
+  fill: var(--black);
+}
+.typescript-pill:hover {
+  transition: 0.2s all;
+  border: 3px solid var(--typescript);
+  color: var(--typescript);
+  box-shadow: 4px 6px 0px var(--typescript);
+}
+.typescript-pill:hover .typescript-icon  {
+  transition: 0.2s all;
+  fill: var(--typescript);
+}
+
+.react-pill {
+  border: 3px solid var(--black);
+  background-color: var(--white)
+}
+.react-pill .react-icon {
+  fill: var(--black);
+}
+.react-pill:hover {
+  transition: 0.2s all;
+  border: 3px solid var(--react);
+  color: var(--react);
+  box-shadow: 4px 6px 0px var(--react);
+}
+.react-pill:hover .react-icon  {
+  transition: 0.2s all;
+  fill: var(--react);
+}
+
+.redux-pill {
+  border: 3px solid var(--black);
+  background-color: var(--white)
+}
+.redux-pill .redux-icon {
+  fill: var(--black);
+}
+.redux-pill:hover {
+  transition: 0.2s all;
+  border: 3px solid var(--redux);
+  color: var(--redux);
+  box-shadow: 4px 6px 0px var(--redux);
+}
+.redux-pill:hover .redux-icon  {
+  transition: 0.2s all;
+  fill: var(--redux);
+}
+
+.webpack-pill {
+  border: 3px solid var(--black);
+  background-color: var(--white)
+}
+.webpack-pill .webpack-icon {
+  fill: var(--black);
+}
+.webpack-pill:hover {
+  transition: 0.2s all;
+  border: 3px solid var(--webpack);
+  color: var(--webpack);
+  box-shadow: 4px 6px 0px var(--webpack);
+}
+.webpack-pill:hover .webpack-icon  {
+  transition: 0.2s all;
+  fill: var(--webpack);
+}
+
+.git-pill {
+  border: 3px solid var(--black);
+  background-color: var(--white)
+}
+.git-pill .git-icon {
+  fill: var(--black);
+}
+.git-pill:hover {
+  transition: 0.2s all;
+  border: 3px solid var(--git);
+  color: var(--git);
+  box-shadow: 4px 6px 0px var(--git);
+}
+.git-pill:hover .git-icon  {
+  transition: 0.2s all;
+  fill: var(--git);
+}
+
+.docker-pill {
+  border: 3px solid var(--black);
+  background-color: var(--white)
+}
+.docker-pill .docker-icon {
+  fill: var(--black);
+}
+.docker-pill:hover {
+  transition: 0.2s all;
+  border: 3px solid var(--docker);
+  color: var(--docker);
+  box-shadow: 4px 6px 0px var(--docker);
+}
+.docker-pill:hover .docker-icon  {
+  transition: 0.2s all;
+  fill: var(--docker);
+}
+
+.javascript-pill {
+  border: 3px solid var(--black);
+  background-color: var(--white)
+}
+.javascript-pill .javascript-icon {
+  fill: var(--black);
+}
+.javascript-pill:hover {
+  transition: 0.2s all;
+  border: 3px solid var(--javascript);
+  color: var(--javascript);
+  box-shadow: 4px 6px 0px var(--javascript);
+}
+.javascript-pill:hover .javascript-icon  {
+  transition: 0.2s all;
+  fill: var(--javascript);
+}
+
+.sass-pill {
+  border: 3px solid var(--black);
+  background-color: var(--white)
+}
+.sass-pill .sass-icon {
+  fill: var(--black);
+}
+.sass-pill:hover {
+  transition: 0.2s all;
+  border: 3px solid var(--sass);
+  color: var(--sass);
+  box-shadow: 4px 6px 0px var(--sass);
+}
+.sass-pill:hover .sass-icon  {
+  transition: 0.2s all;
+  fill: var(--sass);
+}
+
+.node-pill {
+  border: 3px solid var(--black);
+  background-color: var(--white)
+}
+.node-pill .node-icon {
+  fill: var(--black);
+}
+.node-pill:hover {
+  transition: 0.2s all;
+  border: 3px solid var(--node);
+  color: var(--node);
+  box-shadow: 4px 6px 0px var(--node);
+}
+.node-pill:hover .node-icon  {
+  transition: 0.2s all;
+  fill: var(--node);
+}
+
+.circleci-pill {
+  border: 3px solid var(--black);
+  background-color: var(--white)
+}
+.circleci-pill .circleci-icon {
+  fill: var(--black);
+}
+.circleci-pill:hover {
+  transition: 0.2s all;
+  border: 3px solid var(--circleci);
+  color: var(--circleci);
+  box-shadow: 4px 6px 0px var(--circleci);
+}
+.circleci-pill:hover .circleci-icon  {
+  transition: 0.2s all;
+  fill: var(--circleci);
+}
+
+.css-pill {
+  border: 3px solid var(--black);
+  background-color: var(--white)
+}
+.css-pill .css-icon {
+  fill: var(--black);
+}
+.css-pill:hover {
+  transition: 0.2s all;
+  border: 3px solid var(--css);
+  color: var(--css);
+  box-shadow: 4px 6px 0px var(--css);
+}
+.css-pill:hover .css-icon  {
+  transition: 0.2s all;
+  fill: var(--css);
+}

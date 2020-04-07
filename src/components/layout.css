@@ -1,6 +1,17 @@
 :root {
-  --black: #333;
+  --black: rgb(19, 19, 19);
   --white: #fff;
+  --typescript: rgba(0, 122, 204, 1);
+  --react: rgba(97, 218, 251, 1);
+  --redux: rgba(118, 74, 188, 1);
+  --webpack: rgba(141, 214, 249, 1);
+  --git: rgba(240, 80, 50, 1);
+  --docker: rgba(20, 136, 198, 1);
+  --javascript: rgba(236, 210, 9, 1);
+  --sass: rgba(204, 102, 153, 1);
+  --node: rgba(51, 153, 51, 1);
+  --circleci: rgba(52, 52, 52, 1);
+  --css: rgba(21, 114, 182, 1);
 }
 
 .layout-grid {
@@ -23,6 +34,10 @@
       "section-3"
       "section-4";
   }
+}
+.pills-container {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 html {
