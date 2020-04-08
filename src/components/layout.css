@@ -655,10 +655,13 @@ pre tt:after {
 }
 @media only screen and (max-width: 480px) {
   html {
-    font-size: 80%;
+    font-size: 20%;
   }
   p {
     font-size: 1.4rem;
+  }
+  div {
+    font-size: 1.2rem;
   }
 }
 @media only screen and (max-width: 800px) {
