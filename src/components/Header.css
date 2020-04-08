@@ -1,5 +1,8 @@
 .header-parent {
   padding-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
 }
 
 .header-social > a {
