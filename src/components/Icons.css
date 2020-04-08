@@ -27,6 +27,7 @@ svg:hover.github {
 }
 
 .tech-icon {
+  transition: 0.2s all;
   height: 1.2rem
 }
 

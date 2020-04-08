@@ -1,19 +1,52 @@
 
 .pill {
   display: flex;
-  flex-direction: row nowrap;
+  flex-flow: column nowrap;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: 0.2s all;
+  height: fit-content;
+}
+
+.pill-head {
+  display: flex;
+  flex-flow: row nowrap;
   align-items: center;
   padding: 0.2em;
   width: fit-content;
-  transition: 0.2s all;
-  cursor: pointer;
   font-weight: bold;
-  margin: 0.4rem;
 }
 
 .pill-name {
   padding-left: 0.5em;
   font-size: 1.1rem
+}
+
+.pill-details {
+  visibility: hidden;
+  overflow: hidden;
+  color: var(--black);
+  width: 0;
+  height: 0;
+  max-height: 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.open .pill-details {
+  visibility: visible;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 0.5em 0.5em 0.5em;
+  max-height: 200px;
+  transform-origin: top;
+  transition: max-height 0.4s !important;
+  animation: scaleIn 0.2s !important;
+}
+
+@keyframes scaleIn {
+  from { transform: scaleY(0);  }
+  to { transform: scaleY(1) }
 }
 
 .typescript-pill {
@@ -24,13 +57,21 @@
   fill: var(--black);
 }
 .typescript-pill:hover {
-  transition: 0.2s all;
   border: 3px solid var(--typescript);
   color: var(--typescript);
   box-shadow: 4px 6px 0px var(--typescript);
 }
-.typescript-pill:hover .typescript-icon  {
-  transition: 0.2s all;
+.typescript-pill:hover .typescript-icon {
+  fill: var(--typescript);
+}
+
+.open.typescript-pill {
+  border: 3px solid var(--typescript);
+  color: var(--typescript);
+  box-shadow: 4px 6px 0px var(--typescript);
+}
+
+.open.typescript-pill .typescript-icon {
   fill: var(--typescript);
 }
 
@@ -51,6 +92,15 @@
   transition: 0.2s all;
   fill: var(--react);
 }
+.open.react-pill {
+  border: 3px solid var(--react);
+  color: var(--react);
+  box-shadow: 4px 6px 0px var(--react);
+}
+
+.open.react-pill .react-icon {
+  fill: var(--react);
+}
 
 .redux-pill {
   border: 3px solid var(--black);
@@ -67,6 +117,15 @@
 }
 .redux-pill:hover .redux-icon  {
   transition: 0.2s all;
+  fill: var(--redux);
+}
+.open.redux-pill {
+  border: 3px solid var(--redux);
+  color: var(--redux);
+  box-shadow: 4px 6px 0px var(--redux);
+}
+
+.open.redux-pill .redux-icon {
   fill: var(--redux);
 }
 
@@ -87,6 +146,15 @@
   transition: 0.2s all;
   fill: var(--webpack);
 }
+.open.webpack-pill {
+  border: 3px solid var(--webpack);
+  color: var(--webpack);
+  box-shadow: 4px 6px 0px var(--webpack);
+}
+
+.open.webpack-pill .webpack-icon {
+  fill: var(--webpack);
+}
 
 .git-pill {
   border: 3px solid var(--black);
@@ -103,6 +171,15 @@
 }
 .git-pill:hover .git-icon  {
   transition: 0.2s all;
+  fill: var(--git);
+}
+.open.git-pill {
+  border: 3px solid var(--git);
+  color: var(--git);
+  box-shadow: 4px 6px 0px var(--git);
+}
+
+.open.git-pill .git-icon {
   fill: var(--git);
 }
 
@@ -123,6 +200,15 @@
   transition: 0.2s all;
   fill: var(--docker);
 }
+.open.docker-pill {
+  border: 3px solid var(--docker);
+  color: var(--docker);
+  box-shadow: 4px 6px 0px var(--docker);
+}
+
+.open.docker-pill .docker-icon {
+  fill: var(--docker);
+}
 
 .javascript-pill {
   border: 3px solid var(--black);
@@ -139,6 +225,15 @@
 }
 .javascript-pill:hover .javascript-icon  {
   transition: 0.2s all;
+  fill: var(--javascript);
+}
+.open.javascript-pill {
+  border: 3px solid var(--javascript);
+  color: var(--javascript);
+  box-shadow: 4px 6px 0px var(--javascript);
+}
+
+.open.javascript-pill .javascript-icon {
   fill: var(--javascript);
 }
 
@@ -159,6 +254,15 @@
   transition: 0.2s all;
   fill: var(--sass);
 }
+.open.sass-pill {
+  border: 3px solid var(--sass);
+  color: var(--sass);
+  box-shadow: 4px 6px 0px var(--sass);
+}
+
+.open.sass-pill .sass-icon {
+  fill: var(--sass);
+}
 
 .node-pill {
   border: 3px solid var(--black);
@@ -175,6 +279,15 @@
 }
 .node-pill:hover .node-icon  {
   transition: 0.2s all;
+  fill: var(--node);
+}
+.open.node-pill {
+  border: 3px solid var(--node);
+  color: var(--node);
+  box-shadow: 4px 6px 0px var(--node);
+}
+
+.open.node-pill .node-icon {
   fill: var(--node);
 }
 
@@ -195,6 +308,15 @@
   transition: 0.2s all;
   fill: var(--circleci);
 }
+.open.circleci-pill {
+  border: 3px solid var(--circleci);
+  color: var(--circleci);
+  box-shadow: 4px 6px 0px var(--circleci);
+}
+
+.open.circleci-pill .circleci-icon {
+  fill: var(--circleci);
+}
 
 .css-pill {
   border: 3px solid var(--black);
@@ -211,5 +333,14 @@
 }
 .css-pill:hover .css-icon  {
   transition: 0.2s all;
+  fill: var(--css);
+}
+.open.css-pill {
+  border: 3px solid var(--css);
+  color: var(--css);
+  box-shadow: 4px 6px 0px var(--css);
+}
+
+.open.css-pill .css-icon {
   fill: var(--css);
 }
