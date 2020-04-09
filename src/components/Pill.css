@@ -23,41 +23,42 @@
 }
 
 .pill-details {
-  visibility: hidden;
   overflow: hidden;
   color: var(--black);
-  width: 0;
-  height: 0;
   max-height: 0;
+  max-width: 0;
+  transition: max-height 0.1s, max-width 0.1s !important;
   display: flex;
   flex-flow: column nowrap;
 }
 
 .open .pill-details {
-  visibility: visible;
-  height: fit-content;
-  width: fit-content;
   margin: 0 0.5em 0.5em 0.5em;
-  max-height: 200px;
+  max-height: 120px;
+  max-width: 500px;
   transform-origin: top;
-  transition: max-height 0.4s !important;
-  animation: scaleIn 0.2s !important;
+  transition: max-height 0.2s, max-width 0.1s !important;
+  animation: scaleIn 0.1s !important;
+}
+
+.close .pill-details {
+  visibility: hidden;
 }
 
 @keyframes scaleIn {
   from { transform: scaleY(0);  }
-  to { transform: scaleY(1) }
+  to { transform: scaleY(1); }
 }
 
 .typescript-pill {
-  border: 3px solid var(--black);
+  border: 2px solid var(--black);
   background-color: var(--white)
 }
 .typescript-pill .typescript-icon {
   fill: var(--black);
 }
 .typescript-pill:hover {
-  border: 3px solid var(--typescript);
+  border: 2px solid var(--typescript);
   color: var(--typescript);
   box-shadow: 4px 6px 0px var(--typescript);
 }
@@ -66,7 +67,7 @@
 }
 
 .open.typescript-pill {
-  border: 3px solid var(--typescript);
+  border: 2px solid var(--typescript);
   color: var(--typescript);
   box-shadow: 4px 6px 0px var(--typescript);
 }
@@ -76,7 +77,7 @@
 }
 
 .react-pill {
-  border: 3px solid var(--black);
+  border: 2px solid var(--black);
   background-color: var(--white)
 }
 .react-pill .react-icon {
@@ -84,7 +85,7 @@
 }
 .react-pill:hover {
   transition: 0.2s all;
-  border: 3px solid var(--react);
+  border: 2px solid var(--react);
   color: var(--react);
   box-shadow: 4px 6px 0px var(--react);
 }
@@ -93,7 +94,7 @@
   fill: var(--react);
 }
 .open.react-pill {
-  border: 3px solid var(--react);
+  border: 2px solid var(--react);
   color: var(--react);
   box-shadow: 4px 6px 0px var(--react);
 }
@@ -103,7 +104,7 @@
 }
 
 .redux-pill {
-  border: 3px solid var(--black);
+  border: 2px solid var(--black);
   background-color: var(--white)
 }
 .redux-pill .redux-icon {
@@ -111,7 +112,7 @@
 }
 .redux-pill:hover {
   transition: 0.2s all;
-  border: 3px solid var(--redux);
+  border: 2px solid var(--redux);
   color: var(--redux);
   box-shadow: 4px 6px 0px var(--redux);
 }
@@ -120,7 +121,7 @@
   fill: var(--redux);
 }
 .open.redux-pill {
-  border: 3px solid var(--redux);
+  border: 2px solid var(--redux);
   color: var(--redux);
   box-shadow: 4px 6px 0px var(--redux);
 }
@@ -130,7 +131,7 @@
 }
 
 .webpack-pill {
-  border: 3px solid var(--black);
+  border: 2px solid var(--black);
   background-color: var(--white)
 }
 .webpack-pill .webpack-icon {
@@ -138,7 +139,7 @@
 }
 .webpack-pill:hover {
   transition: 0.2s all;
-  border: 3px solid var(--webpack);
+  border: 2px solid var(--webpack);
   color: var(--webpack);
   box-shadow: 4px 6px 0px var(--webpack);
 }
@@ -147,7 +148,7 @@
   fill: var(--webpack);
 }
 .open.webpack-pill {
-  border: 3px solid var(--webpack);
+  border: 2px solid var(--webpack);
   color: var(--webpack);
   box-shadow: 4px 6px 0px var(--webpack);
 }
@@ -157,7 +158,7 @@
 }
 
 .git-pill {
-  border: 3px solid var(--black);
+  border: 2px solid var(--black);
   background-color: var(--white)
 }
 .git-pill .git-icon {
@@ -165,7 +166,7 @@
 }
 .git-pill:hover {
   transition: 0.2s all;
-  border: 3px solid var(--git);
+  border: 2px solid var(--git);
   color: var(--git);
   box-shadow: 4px 6px 0px var(--git);
 }
@@ -174,7 +175,7 @@
   fill: var(--git);
 }
 .open.git-pill {
-  border: 3px solid var(--git);
+  border: 2px solid var(--git);
   color: var(--git);
   box-shadow: 4px 6px 0px var(--git);
 }
@@ -184,7 +185,7 @@
 }
 
 .docker-pill {
-  border: 3px solid var(--black);
+  border: 2px solid var(--black);
   background-color: var(--white)
 }
 .docker-pill .docker-icon {
@@ -192,7 +193,7 @@
 }
 .docker-pill:hover {
   transition: 0.2s all;
-  border: 3px solid var(--docker);
+  border: 2px solid var(--docker);
   color: var(--docker);
   box-shadow: 4px 6px 0px var(--docker);
 }
@@ -201,7 +202,7 @@
   fill: var(--docker);
 }
 .open.docker-pill {
-  border: 3px solid var(--docker);
+  border: 2px solid var(--docker);
   color: var(--docker);
   box-shadow: 4px 6px 0px var(--docker);
 }
@@ -211,7 +212,7 @@
 }
 
 .javascript-pill {
-  border: 3px solid var(--black);
+  border: 2px solid var(--black);
   background-color: var(--white)
 }
 .javascript-pill .javascript-icon {
@@ -219,7 +220,7 @@
 }
 .javascript-pill:hover {
   transition: 0.2s all;
-  border: 3px solid var(--javascript);
+  border: 2px solid var(--javascript);
   color: var(--javascript);
   box-shadow: 4px 6px 0px var(--javascript);
 }
@@ -228,7 +229,7 @@
   fill: var(--javascript);
 }
 .open.javascript-pill {
-  border: 3px solid var(--javascript);
+  border: 2px solid var(--javascript);
   color: var(--javascript);
   box-shadow: 4px 6px 0px var(--javascript);
 }
@@ -238,7 +239,7 @@
 }
 
 .sass-pill {
-  border: 3px solid var(--black);
+  border: 2px solid var(--black);
   background-color: var(--white)
 }
 .sass-pill .sass-icon {
@@ -246,7 +247,7 @@
 }
 .sass-pill:hover {
   transition: 0.2s all;
-  border: 3px solid var(--sass);
+  border: 2px solid var(--sass);
   color: var(--sass);
   box-shadow: 4px 6px 0px var(--sass);
 }
@@ -255,7 +256,7 @@
   fill: var(--sass);
 }
 .open.sass-pill {
-  border: 3px solid var(--sass);
+  border: 2px solid var(--sass);
   color: var(--sass);
   box-shadow: 4px 6px 0px var(--sass);
 }
@@ -265,7 +266,7 @@
 }
 
 .node-pill {
-  border: 3px solid var(--black);
+  border: 2px solid var(--black);
   background-color: var(--white)
 }
 .node-pill .node-icon {
@@ -273,7 +274,7 @@
 }
 .node-pill:hover {
   transition: 0.2s all;
-  border: 3px solid var(--node);
+  border: 2px solid var(--node);
   color: var(--node);
   box-shadow: 4px 6px 0px var(--node);
 }
@@ -282,7 +283,7 @@
   fill: var(--node);
 }
 .open.node-pill {
-  border: 3px solid var(--node);
+  border: 2px solid var(--node);
   color: var(--node);
   box-shadow: 4px 6px 0px var(--node);
 }
@@ -292,7 +293,7 @@
 }
 
 .circleci-pill {
-  border: 3px solid var(--black);
+  border: 2px solid var(--black);
   background-color: var(--white)
 }
 .circleci-pill .circleci-icon {
@@ -300,7 +301,7 @@
 }
 .circleci-pill:hover {
   transition: 0.2s all;
-  border: 3px solid var(--circleci);
+  border: 2px solid var(--circleci);
   color: var(--circleci);
   box-shadow: 4px 6px 0px var(--circleci);
 }
@@ -309,7 +310,7 @@
   fill: var(--circleci);
 }
 .open.circleci-pill {
-  border: 3px solid var(--circleci);
+  border: 2px solid var(--circleci);
   color: var(--circleci);
   box-shadow: 4px 6px 0px var(--circleci);
 }
@@ -319,7 +320,7 @@
 }
 
 .css-pill {
-  border: 3px solid var(--black);
+  border: 2px solid var(--black);
   background-color: var(--white)
 }
 .css-pill .css-icon {
@@ -327,7 +328,7 @@
 }
 .css-pill:hover {
   transition: 0.2s all;
-  border: 3px solid var(--css);
+  border: 2px solid var(--css);
   color: var(--css);
   box-shadow: 4px 6px 0px var(--css);
 }
@@ -336,7 +337,7 @@
   fill: var(--css);
 }
 .open.css-pill {
-  border: 3px solid var(--css);
+  border: 2px solid var(--css);
   color: var(--css);
   box-shadow: 4px 6px 0px var(--css);
 }
