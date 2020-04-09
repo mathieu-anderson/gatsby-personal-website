@@ -1,10 +1,10 @@
 .job-container:not(:last-child) {
   border-bottom: 2px solid var(--black);
-  padding-bottom: 1rem;
+  padding-bottom: 1em;
 }
 
 .job-container:not(:first-of-type) {
-  padding-top: 1rem;
+  padding-top: 1em;
 }
 
 .job-container > p {
@@ -20,7 +20,6 @@
 }
 
 .job-tech {
-  margin-left: -0.3rem;
-  padding: 0.5rem 0;
-  height: 3.5rem;
+  margin-left: -0.3em;
+  padding: 0.5em 0;
 }
