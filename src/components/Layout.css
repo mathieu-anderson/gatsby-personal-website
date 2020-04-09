@@ -1,5 +1,5 @@
 :root {
-  --black: rgb(19, 19, 19);
+  --black: black;
   --white: #fff;
   --typescript: rgba(0, 122, 204, 1);
   --react: rgba(97, 218, 251, 1);
