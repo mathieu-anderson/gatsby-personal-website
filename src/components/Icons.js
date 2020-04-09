@@ -3,7 +3,11 @@ import "./Icons.css"
 
 export const GithubIcon = () => {
   return (
-    <a title="GitHub" href="https://github.com/mathieu-anderson">
+    <a
+      className="social-link"
+      title="GitHub"
+      href="https://github.com/mathieu-anderson"
+    >
       <svg
         className="social-icon icon-flip github"
         role="img"
@@ -32,7 +36,11 @@ export const GithubIcon = () => {
 
 export const MediumIcon = () => {
   return (
-    <a title="Medium" href="https://medium.com/@syllaband">
+    <a
+      className="social-link"
+      title="Medium"
+      href="https://medium.com/@syllaband"
+    >
       <svg
         className="social-icon icon-flip medium"
         role="img"
@@ -55,7 +63,11 @@ export const MediumIcon = () => {
 
 export const TwitterIcon = () => {
   return (
-    <a title="Twitter" href="https://twitter.com/syllaband">
+    <a
+      className="social-link"
+      title="Twitter"
+      href="https://twitter.com/syllaband"
+    >
       <svg
         className="social-icon icon-flip twitter"
         role="img"
@@ -83,7 +95,11 @@ export const TwitterIcon = () => {
 
 export const LinkedinIcon = () => {
   return (
-    <a title="LinkedIn" href="https://www.linkedin.com/in/mathieuanderson/">
+    <a
+      className="social-link"
+      title="LinkedIn"
+      href="https://www.linkedin.com/in/mathieuanderson/"
+    >
       <svg
         className="social-icon icon-flip linkedin"
         role="img"

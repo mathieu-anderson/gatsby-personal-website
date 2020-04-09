@@ -3,10 +3,12 @@
   position: sticky;
   top: 0;
   background-color: var(--white);
+  z-index: 1000;
 }
 
 .header-social > a {
  margin-left: 1rem;
+ border: 0;
 }
 
 a:first-of-type {
