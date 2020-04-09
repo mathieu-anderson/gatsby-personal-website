@@ -1,0 +1,325 @@
+
+.minipill {
+  cursor: pointer;
+  margin: 0.3rem;
+  transition: 0.2s all;
+  height: fit-content;
+  min-width: 1.8rem;
+}
+
+.minipill-icon {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0.2em;
+}
+
+.minipill-name {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.2rem 0 0.2rem;
+  position: relative;
+  top: -0.3rem;
+  height: 1.6rem;
+  color: var(--black);
+}
+
+.open .minipill-name {
+  transform-origin: top;
+  animation: scaleIn 0.1s !important;
+}
+
+.typescript-minipill {
+  border: 2px solid var(--black);
+  background-color: var(--white)
+}
+.typescript-minipill .typescript-icon {
+  fill: var(--black);
+}
+.typescript-minipill:hover {
+  border: 2px solid var(--typescript);
+  color: var(--typescript);
+  box-shadow: 4px 6px 0px var(--typescript);
+}
+.typescript-minipill:hover .typescript-icon {
+  fill: var(--typescript);
+}
+
+.open.typescript-minipill {
+  border: 2px solid var(--typescript);
+  color: var(--typescript);
+  box-shadow: 4px 6px 0px var(--typescript);
+}
+
+.open.typescript-minipill .typescript-icon {
+  fill: var(--typescript);
+}
+
+.react-minipill {
+  border: 2px solid var(--black);
+  background-color: var(--white)
+}
+.react-minipill .react-icon {
+  fill: var(--black);
+}
+.react-minipill:hover {
+  transition: 0.2s all;
+  border: 2px solid var(--react);
+  color: var(--react);
+  box-shadow: 4px 6px 0px var(--react);
+}
+.react-minipill:hover .react-icon  {
+  transition: 0.2s all;
+  fill: var(--react);
+}
+.open.react-minipill {
+  border: 2px solid var(--react);
+  color: var(--react);
+  box-shadow: 4px 6px 0px var(--react);
+}
+
+.open.react-minipill .react-icon {
+  fill: var(--react);
+}
+
+.redux-minipill {
+  border: 2px solid var(--black);
+  background-color: var(--white)
+}
+.redux-minipill .redux-icon {
+  fill: var(--black);
+}
+.redux-minipill:hover {
+  transition: 0.2s all;
+  border: 2px solid var(--redux);
+  color: var(--redux);
+  box-shadow: 4px 6px 0px var(--redux);
+}
+.redux-minipill:hover .redux-icon  {
+  transition: 0.2s all;
+  fill: var(--redux);
+}
+.open.redux-minipill {
+  border: 2px solid var(--redux);
+  color: var(--redux);
+  box-shadow: 4px 6px 0px var(--redux);
+}
+
+.open.redux-minipill .redux-icon {
+  fill: var(--redux);
+}
+
+.webpack-minipill {
+  border: 2px solid var(--black);
+  background-color: var(--white)
+}
+.webpack-minipill .webpack-icon {
+  fill: var(--black);
+}
+.webpack-minipill:hover {
+  transition: 0.2s all;
+  border: 2px solid var(--webpack);
+  color: var(--webpack);
+  box-shadow: 4px 6px 0px var(--webpack);
+}
+.webpack-minipill:hover .webpack-icon  {
+  transition: 0.2s all;
+  fill: var(--webpack);
+}
+.open.webpack-minipill {
+  border: 2px solid var(--webpack);
+  color: var(--webpack);
+  box-shadow: 4px 6px 0px var(--webpack);
+}
+
+.open.webpack-minipill .webpack-icon {
+  fill: var(--webpack);
+}
+
+.git-minipill {
+  border: 2px solid var(--black);
+  background-color: var(--white)
+}
+.git-minipill .git-icon {
+  fill: var(--black);
+}
+.git-minipill:hover {
+  transition: 0.2s all;
+  border: 2px solid var(--git);
+  color: var(--git);
+  box-shadow: 4px 6px 0px var(--git);
+}
+.git-minipill:hover .git-icon  {
+  transition: 0.2s all;
+  fill: var(--git);
+}
+.open.git-minipill {
+  border: 2px solid var(--git);
+  color: var(--git);
+  box-shadow: 4px 6px 0px var(--git);
+}
+
+.open.git-minipill .git-icon {
+  fill: var(--git);
+}
+
+.docker-minipill {
+  border: 2px solid var(--black);
+  background-color: var(--white)
+}
+.docker-minipill .docker-icon {
+  fill: var(--black);
+}
+.docker-minipill:hover {
+  transition: 0.2s all;
+  border: 2px solid var(--docker);
+  color: var(--docker);
+  box-shadow: 4px 6px 0px var(--docker);
+}
+.docker-minipill:hover .docker-icon  {
+  transition: 0.2s all;
+  fill: var(--docker);
+}
+.open.docker-minipill {
+  border: 2px solid var(--docker);
+  color: var(--docker);
+  box-shadow: 4px 6px 0px var(--docker);
+}
+
+.open.docker-minipill .docker-icon {
+  fill: var(--docker);
+}
+
+.javascript-minipill {
+  border: 2px solid var(--black);
+  background-color: var(--white)
+}
+.javascript-minipill .javascript-icon {
+  fill: var(--black);
+}
+.javascript-minipill:hover {
+  transition: 0.2s all;
+  border: 2px solid var(--javascript);
+  color: var(--javascript);
+  box-shadow: 4px 6px 0px var(--javascript);
+}
+.javascript-minipill:hover .javascript-icon  {
+  transition: 0.2s all;
+  fill: var(--javascript);
+}
+.open.javascript-minipill {
+  border: 2px solid var(--javascript);
+  color: var(--javascript);
+  box-shadow: 4px 6px 0px var(--javascript);
+}
+
+.open.javascript-minipill .javascript-icon {
+  fill: var(--javascript);
+}
+
+.sass-minipill {
+  border: 2px solid var(--black);
+  background-color: var(--white)
+}
+.sass-minipill .sass-icon {
+  fill: var(--black);
+}
+.sass-minipill:hover {
+  transition: 0.2s all;
+  border: 2px solid var(--sass);
+  color: var(--sass);
+  box-shadow: 4px 6px 0px var(--sass);
+}
+.sass-minipill:hover .sass-icon  {
+  transition: 0.2s all;
+  fill: var(--sass);
+}
+.open.sass-minipill {
+  border: 2px solid var(--sass);
+  color: var(--sass);
+  box-shadow: 4px 6px 0px var(--sass);
+}
+
+.open.sass-minipill .sass-icon {
+  fill: var(--sass);
+}
+
+.node-minipill {
+  border: 2px solid var(--black);
+  background-color: var(--white)
+}
+.node-minipill .node-icon {
+  fill: var(--black);
+}
+.node-minipill:hover {
+  transition: 0.2s all;
+  border: 2px solid var(--node);
+  color: var(--node);
+  box-shadow: 4px 6px 0px var(--node);
+}
+.node-minipill:hover .node-icon  {
+  transition: 0.2s all;
+  fill: var(--node);
+}
+.open.node-minipill {
+  border: 2px solid var(--node);
+  color: var(--node);
+  box-shadow: 4px 6px 0px var(--node);
+}
+
+.open.node-minipill .node-icon {
+  fill: var(--node);
+}
+
+.circleci-minipill {
+  border: 2px solid var(--black);
+  background-color: var(--white)
+}
+.circleci-minipill .circleci-icon {
+  fill: var(--black);
+}
+.circleci-minipill:hover {
+  transition: 0.2s all;
+  border: 2px solid var(--circleci);
+  color: var(--circleci);
+  box-shadow: 4px 6px 0px var(--circleci);
+}
+.circleci-minipill:hover .circleci-icon  {
+  transition: 0.2s all;
+  fill: var(--circleci);
+}
+.open.circleci-minipill {
+  border: 2px solid var(--circleci);
+  color: var(--circleci);
+  box-shadow: 4px 6px 0px var(--circleci);
+}
+
+.open.circleci-minipill .circleci-icon {
+  fill: var(--circleci);
+}
+
+.css-minipill {
+  border: 2px solid var(--black);
+  background-color: var(--white)
+}
+.css-minipill .css-icon {
+  fill: var(--black);
+}
+.css-minipill:hover {
+  transition: 0.2s all;
+  border: 2px solid var(--css);
+  color: var(--css);
+  box-shadow: 4px 6px 0px var(--css);
+}
+.css-minipill:hover .css-icon  {
+  transition: 0.2s all;
+  fill: var(--css);
+}
+.open.css-minipill {
+  border: 2px solid var(--css);
+  color: var(--css);
+  box-shadow: 4px 6px 0px var(--css);
+}
+
+.open.css-minipill .css-icon {
+  fill: var(--css);
+}
