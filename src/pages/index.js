@@ -13,7 +13,7 @@ import {
   CircleCiIcon,
 } from "../components/Icons"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import Box from "../components/Box"
 import Pill from "../components/Pill"
