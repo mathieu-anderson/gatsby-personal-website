@@ -1,0 +1,26 @@
+.job-container:not(:last-child) {
+  border-bottom: 2px solid var(--black);
+  padding-bottom: 1rem;
+}
+
+.job-container:not(:first-of-type) {
+  padding-top: 1rem;
+}
+
+.job-container > p {
+  margin-bottom: 0;
+}
+
+.job-dates {
+  font-style: italic;
+}
+
+.job-role {
+  font-weight: bold;
+}
+
+.job-tech {
+  margin-left: -0.3rem;
+  padding: 0.5rem 0;
+  height: 3.5rem;
+}
