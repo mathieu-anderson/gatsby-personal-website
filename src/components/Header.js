@@ -21,7 +21,13 @@ const Header = () => {
           onMouseDown={() => {
             activateWhimsy()
           }}
+          onTouchStart={() => {
+            activateWhimsy()
+          }}
           onMouseUp={() => {
+            deactivateWhimsy()
+          }}
+          onTouchEnd={() => {
             deactivateWhimsy()
           }}
         >

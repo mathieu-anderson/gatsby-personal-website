@@ -72,6 +72,8 @@ export const WhimsyContainer = ({ children }) => {
       className={adjectiveClassName}
       onMouseDown={activateWhimsy}
       onMouseUp={deactivateWhimsy}
+      onTouchStart={activateWhimsy}
+      onTouchEnd={deactivateWhimsy}
     >
       {children}
     </button>
