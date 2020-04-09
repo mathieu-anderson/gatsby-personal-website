@@ -16,10 +16,7 @@ const Pill = ({ icon, name, details }) => {
         {icon}
         <div className="pill-name">{name}</div>
       </div>
-      <div
-        className="pill-details"
-        aria-hidden={`${showDetails ? "false" : "true"}`}
-      >
+      <div className="pill-details" aria-hidden={showDetails ? false : true}>
         <div>
           <b>Since </b>
           {details.since}
