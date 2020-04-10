@@ -3,9 +3,9 @@
   cursor: pointer;
   margin: 0.3rem;
   transition: 0.2s all;
-  height: fit-content;
   min-width: 1.8rem;
-  overflow: hidden;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .minipill-icon {
@@ -16,18 +16,21 @@
 }
 
 .minipill-name {
-  font-size: 0.8rem;
-  padding: 0.4rem 0.2rem 0 0.2rem;
-  position: relative;
-  top: -0.35rem;
-  height: 1.6rem;
-  color: var(--black);
+  visibility: hidden;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 
 .open .minipill-name {
-  transform-origin: top;
-  animation: scaleIn 0.1s !important;
+  visibility: visible;
+  transform-origin: left;
+  padding-right: 0.2rem;
+  animation: scaleInX 0.1s !important;
+}
+
+@keyframes scaleInX {
+  from { transform: scaleX(0);  }
+  to { transform: scaleX(1); }
 }
 
 .typescript-minipill {
@@ -52,8 +55,12 @@
   box-shadow: 4px 6px 0px var(--typescript);
 }
 
-.open.typescript-minipill .minipill-name {
+.open.typescript-minipill .minipill-name{
   color: var(--typescript);
+}
+
+.open.typescript-minipill .typescript-icon{
+  fill: var(--typescript);
 }
 
 .react-minipill {
@@ -79,8 +86,12 @@
   box-shadow: 4px 6px 0px var(--react);
 }
 
-.open.react-minipill .minipill-name {
+.open.react-minipill .minipill-name{
   color: var(--react);
+}
+
+.open.react-minipill .react-icon{
+  fill: var(--react);
 }
 
 .redux-minipill {
@@ -106,8 +117,12 @@
   box-shadow: 4px 6px 0px var(--redux);
 }
 
-.open.redux-minipill .minipill-name {
+.open.redux-minipill .minipill-name{
   color: var(--redux);
+}
+
+.open.redux-minipill .redux-icon{
+  fill: var(--redux);
 }
 
 .webpack-minipill {
@@ -133,8 +148,12 @@
   box-shadow: 4px 6px 0px var(--webpack);
 }
 
-.open.webpack-minipill .minipill-name {
+.open.webpack-minipill .minipill-name{
   color: var(--webpack);
+}
+
+.open.webpack-minipill .webpack-icon{
+  fill: var(--webpack);
 }
 
 .git-minipill {
@@ -160,8 +179,12 @@
   box-shadow: 4px 6px 0px var(--git);
 }
 
-.open.git-minipill .minipill-name {
+.open.git-minipill .minipill-name{
   color: var(--git);
+}
+
+.open.git-minipill .git-icon{
+  fill: var(--git);
 }
 
 .docker-minipill {
@@ -187,8 +210,12 @@
   box-shadow: 4px 6px 0px var(--docker);
 }
 
-.open.docker-minipill .minipill-name {
+.open.docker-minipill .minipill-name{
   color: var(--docker);
+}
+
+.open.docker-minipill .docker-icon{
+  fill: var(--docker);
 }
 
 .javascript-minipill {
@@ -214,8 +241,12 @@
   box-shadow: 4px 6px 0px var(--javascript);
 }
 
-.open.javascript-minipill .minipill-name {
+.open.javascript-minipill .minipill-name{
   color: var(--javascript);
+}
+
+.open.javascript-minipill .javascript-icon{
+  fill: var(--javascript);
 }
 
 .sass-minipill {
@@ -241,8 +272,12 @@
   box-shadow: 4px 6px 0px var(--sass);
 }
 
-.open.sass-minipill .minipill-name {
+.open.sass-minipill .minipill-name{
   color: var(--sass);
+}
+
+.open.sass-minipill .sass-icon{
+  fill: var(--sass);
 }
 
 .node-minipill {
@@ -268,8 +303,12 @@
   box-shadow: 4px 6px 0px var(--node);
 }
 
-.open.node-minipill .minipill-name {
+.open.node-minipill .minipill-name{
   color: var(--node);
+}
+
+.open.node-minipill .node-icon{
+  fill: var(--node);
 }
 
 .circleci-minipill {
@@ -295,8 +334,12 @@
   box-shadow: 4px 6px 0px var(--circleci);
 }
 
-.open.circleci-minipill .minipill-name {
+.open.circleci-minipill .minipill-name{
   color: var(--circleci);
+}
+
+.open.circleci-minipill .circleci-icon{
+  fill: var(--circleci);
 }
 
 .css-minipill {
@@ -322,6 +365,10 @@
   box-shadow: 4px 6px 0px var(--css);
 }
 
-.open.css-minipill .minipill-name {
+.open.css-minipill .minipill-name{
   color: var(--css);
+}
+
+.open.css-minipill .css-icon{
+  fill: var(--css);
 }

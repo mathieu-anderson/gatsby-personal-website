@@ -12,11 +12,8 @@ const MiniPill = ({ icon, name }) => {
         setShowDetails(!showDetails)
       }}
     >
-      {showDetails ? (
-        <div className="minipill-name">{name}</div>
-      ) : (
-        <div className="minipill-icon">{icon}</div>
-      )}
+      <div className="minipill-icon">{icon}</div>
+      {showDetails ? <div className="minipill-name">{name}</div> : null}
     </button>
   )
 }
