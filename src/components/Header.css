@@ -11,6 +11,11 @@
  border: 0;
 }
 
+.header-social > a::before {
+  height: 0px;
+  background-color: var(--white);
+}
+
 a:first-of-type {
   margin-left: 0;
 }
