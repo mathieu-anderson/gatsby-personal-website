@@ -699,20 +699,27 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 20%;
+    line-height: 1.9em;
   }
   p {
     font-size: 1.4rem;
+  }
+  .job-dates{
+    font-size: 1.3rem !important;
+  }
+   .job-role {
+    font-size: 1.5rem !important;
   }
   div {
     font-size: 1.2rem;
   }
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 @media only screen and (max-width: 800px) {
   html {
-    font-size: 80%;
+    font-size: 100%;
   }
 }
 @media only screen and (min-width: 2000px) {
