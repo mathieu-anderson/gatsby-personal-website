@@ -27,13 +27,41 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
 
+  const schemaOrgWebPage = {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    url: "https://matand.dev/",
+    headline: "Mathieu Anderson is a web dev",
+    inLanguage: "English",
+    mainEntityOfPage: "https://matand.dev/",
+    description: metaDescription,
+    name: title,
+    author: {
+      "@type": "Person",
+      name: site.siteMetadata.author,
+    },
+    copyrightHolder: {
+      "@type": "Person",
+      name: site.siteMetadata.author,
+    },
+    copyrightYear: "2020",
+    creator: {
+      "@type": "Person",
+      name: site.siteMetadata.author,
+    },
+    publisher: {
+      "@type": "Person",
+      name: site.siteMetadata.author,
+    },
+  }
+
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
@@ -68,7 +96,11 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <script type="application/ld+json">
+        {JSON.stringify(schemaOrgWebPage)}
+      </script>
+    </Helmet>
   )
 }
 
