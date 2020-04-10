@@ -19,14 +19,14 @@ export const useScroll = () => {
     // `prev` provides us the previous state: https://reactjs.org/docs/hooks-reference.html#functional-updates
     setScroll(prev => ({
       x: isBrowser ? document.body.getBoundingClientRect().left : 0,
-      y: isBrowser ? -document.body.getBoundingClientRect().top : 0,
+      // Use window.scrollY because it will always give 0 when scrolled all the way to the top
+      // EXCEPT ON FIRST LOAD APPARENTLY
+      y: isBrowser ? window.scrollY : 0,
       // Here we’re comparing the previous state to the current state to get the scroll direction
       direction:
-        prev.y > isBrowser
-          ? -document.body.getBoundingClientRect().top
-            ? "up"
-            : "down"
-          : "no up or down without browser",
+        prev.y > (isBrowser ? -document.body.getBoundingClientRect().top : 0)
+          ? "up"
+          : "down",
     }))
   }
 

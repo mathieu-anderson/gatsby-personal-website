@@ -10,18 +10,19 @@
   align-items: center;
 }
 
-.header-parent-mini .social-icon{
+.header-title {
   transition: 0.2s ease-in;
-  height: 1.2rem;
 }
 
 .header-title-mini {
   font-size: 1.7rem;
   margin-bottom: 0.4rem;
   transition: 0.2s ease-in;
+
 }
 
 .header-social {
+  transition: 0.2s ease-in;
   min-width: 172px;
 }
 
@@ -68,6 +69,10 @@
     flex-flow: column nowrap;
     align-items: flex-start;
   }
+    .header-parent-mini .social-icon{
+    height: 1.2rem;
+  }
+
 }
 
 a:first-of-type {
