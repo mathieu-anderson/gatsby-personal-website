@@ -5,6 +5,7 @@
   transition: 0.2s all;
   height: fit-content;
   min-width: 1.8rem;
+  overflow: hidden;
 }
 
 .minipill-icon {
@@ -16,11 +17,12 @@
 
 .minipill-name {
   font-size: 0.8rem;
-  padding: 0.35rem 0.2rem 0 0.2rem;
+  padding: 0.4rem 0.2rem 0 0.2rem;
   position: relative;
-  top: -0.3rem;
+  top: -0.35rem;
   height: 1.6rem;
   color: var(--black);
+  font-weight: bold;
 }
 
 .open .minipill-name {
@@ -50,8 +52,8 @@
   box-shadow: 4px 6px 0px var(--typescript);
 }
 
-.open.typescript-minipill .typescript-icon {
-  fill: var(--typescript);
+.open.typescript-minipill .minipill-name {
+  color: var(--typescript);
 }
 
 .react-minipill {
@@ -77,8 +79,8 @@
   box-shadow: 4px 6px 0px var(--react);
 }
 
-.open.react-minipill .react-icon {
-  fill: var(--react);
+.open.react-minipill .minipill-name {
+  color: var(--react);
 }
 
 .redux-minipill {
@@ -104,8 +106,8 @@
   box-shadow: 4px 6px 0px var(--redux);
 }
 
-.open.redux-minipill .redux-icon {
-  fill: var(--redux);
+.open.redux-minipill .minipill-name {
+  color: var(--redux);
 }
 
 .webpack-minipill {
@@ -131,8 +133,8 @@
   box-shadow: 4px 6px 0px var(--webpack);
 }
 
-.open.webpack-minipill .webpack-icon {
-  fill: var(--webpack);
+.open.webpack-minipill .minipill-name {
+  color: var(--webpack);
 }
 
 .git-minipill {
@@ -158,8 +160,8 @@
   box-shadow: 4px 6px 0px var(--git);
 }
 
-.open.git-minipill .git-icon {
-  fill: var(--git);
+.open.git-minipill .minipill-name {
+  color: var(--git);
 }
 
 .docker-minipill {
@@ -185,8 +187,8 @@
   box-shadow: 4px 6px 0px var(--docker);
 }
 
-.open.docker-minipill .docker-icon {
-  fill: var(--docker);
+.open.docker-minipill .minipill-name {
+  color: var(--docker);
 }
 
 .javascript-minipill {
@@ -212,8 +214,8 @@
   box-shadow: 4px 6px 0px var(--javascript);
 }
 
-.open.javascript-minipill .javascript-icon {
-  fill: var(--javascript);
+.open.javascript-minipill .minipill-name {
+  color: var(--javascript);
 }
 
 .sass-minipill {
@@ -239,8 +241,8 @@
   box-shadow: 4px 6px 0px var(--sass);
 }
 
-.open.sass-minipill .sass-icon {
-  fill: var(--sass);
+.open.sass-minipill .minipill-name {
+  color: var(--sass);
 }
 
 .node-minipill {
@@ -266,8 +268,8 @@
   box-shadow: 4px 6px 0px var(--node);
 }
 
-.open.node-minipill .node-icon {
-  fill: var(--node);
+.open.node-minipill .minipill-name {
+  color: var(--node);
 }
 
 .circleci-minipill {
@@ -293,8 +295,8 @@
   box-shadow: 4px 6px 0px var(--circleci);
 }
 
-.open.circleci-minipill .circleci-icon {
-  fill: var(--circleci);
+.open.circleci-minipill .minipill-name {
+  color: var(--circleci);
 }
 
 .css-minipill {
@@ -320,6 +322,6 @@
   box-shadow: 4px 6px 0px var(--css);
 }
 
-.open.css-minipill .css-icon {
-  fill: var(--css);
+.open.css-minipill .minipill-name {
+  color: var(--css);
 }
