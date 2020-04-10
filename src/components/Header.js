@@ -4,7 +4,7 @@ import useWhimsy from "../hooks/useWhimsy"
 
 import "./Header.css"
 import "../hooks/useWhimsy.css"
-import { useScrollPosition } from "../hooks/useScrollPosition"
+import { useScroll } from "../hooks/useScroll"
 
 const Header = () => {
   const {
@@ -13,11 +13,11 @@ const Header = () => {
     adjective,
     adjectiveClassName,
   } = useWhimsy()
-  const [y, setY] = React.useState(null)
-  useScrollPosition(({ currPos }) => {
-    setY(currPos.y)
-  })
-  const hasScrolled = y < 0
+
+  const pos = useScroll()
+
+  const hasScrolled = pos.y > 5
+
   return (
     <header
       className={`header-parent ${hasScrolled ? "header-parent-mini" : ""}`}

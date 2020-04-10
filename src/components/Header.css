@@ -1,5 +1,5 @@
 .header-parent {
-  padding-bottom: 1rem;
+  padding: 0.5rem 0;
   position: sticky;
   top: 0;
   background-color: var(--white);
@@ -10,18 +10,15 @@
   align-items: center;
 }
 
-.header-parent-mini {
-  padding-top: 0.5rem;
-  padding-bottom: 0;
-}
-
 .header-parent-mini .social-icon{
-   height: 1.2rem;
+  transition: 0.2s ease-in;
+  height: 1.2rem;
 }
 
 .header-title-mini {
   font-size: 1.7rem;
   margin-bottom: 0.4rem;
+  transition: 0.2s ease-in;
 }
 
 .header-social {
