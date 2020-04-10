@@ -4,6 +4,7 @@ import useWhimsy from "../hooks/useWhimsy"
 
 import "./Header.css"
 import "../hooks/useWhimsy.css"
+import { useScroll } from "../hooks/useScroll"
 
 const Header = () => {
   const {
@@ -13,9 +14,14 @@ const Header = () => {
     adjectiveClassName,
   } = useWhimsy()
 
+  const { y } = useScroll()
+  const hasScrolled = y > 10
+
   return (
-    <header className="header-parent">
-      <h1 className={`header-title`}>
+    <header
+      className={`header-parent ${hasScrolled ? "header-parent-mini" : ""}`}
+    >
+      <h1 className={`${hasScrolled ? "header-title-mini" : "header-title"}`}>
         <button
           className={adjectiveClassName}
           onMouseDown={() => {
@@ -37,12 +43,16 @@ const Header = () => {
           )}
         </button>
       </h1>
-      <div className="header-social">
-        <GithubIcon />
-        <MediumIcon />
-        <TwitterIcon />
-        <LinkedinIcon />
-      </div>
+      {(adjectiveClassName === "" ||
+        adjectiveClassName === "nudge" ||
+        hasScrolled) && (
+        <div className="header-social">
+          <GithubIcon />
+          <MediumIcon />
+          <TwitterIcon />
+          <LinkedinIcon />
+        </div>
+      )}
     </header>
   )
 }

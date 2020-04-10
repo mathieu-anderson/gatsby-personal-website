@@ -4,6 +4,33 @@
   top: 0;
   background-color: var(--white);
   z-index: 1000;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-parent-mini {
+  padding-top: 0.5rem;
+  padding-bottom: 0;
+}
+
+.header-parent-mini .social-icon{
+   height: 1.2rem;
+}
+
+.header-title-mini {
+  font-size: 1.7rem;
+  transition: 0.1s ease-in;
+  margin-bottom: 0.4rem;
+}
+
+.header-social {
+  min-width: 172px;
+}
+
+.header-parent-mini .header-social {
+  min-width: 0;
 }
 
 .header-social > a {
@@ -16,8 +43,42 @@
   background-color: var(--white);
 }
 
+@media only screen and (max-width: 1000px) {
+  .header-parent {
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+    z-index: 1000;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-title {
+    font-size: 2rem;
+  }
+  .header-title-mini {
+    font-size: 1.3rem;
+  }
+  .header-parent {
+    padding-bottom: 0.2rem;
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+    z-index: 1000;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+}
+
 a:first-of-type {
   margin-left: 0;
+}
+a:last-of-type {
+ margin-right: 10px;
 }
 
 button {

@@ -63,7 +63,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-display: optional;
+  font-display: fallback;
 }
 
 body {
@@ -702,8 +702,8 @@ pre tt:after {
     font-size: 20%;
     line-height: 1.9em;
   }
-  p {
-    font-size: 1.4rem;
+  p, ul, li {
+    font-size: 1.3rem;
   }
   .job-dates{
     font-size: 1.3rem !important;

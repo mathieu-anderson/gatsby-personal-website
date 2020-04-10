@@ -263,7 +263,6 @@ const IndexPage = () => {
               </a>
             </li>
           </ul>
-          <br />
           <p>
             I also love building little projects to learn new tech, or just to
             see if I can!
