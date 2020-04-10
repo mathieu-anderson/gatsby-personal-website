@@ -12,11 +12,13 @@
 }
 
 .job-dates {
+  font-size: 0.9rem;
   font-style: italic;
 }
 
 .job-role {
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .job-tech {
