@@ -724,7 +724,7 @@ pre tt:after {
 }
 @media only screen and (min-width: 2000px) {
   html {
-    font-size: 140%;
+    font-size: 130%;
   }
   h1 {
     font-size: 2.2rem;
