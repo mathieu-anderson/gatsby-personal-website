@@ -20,7 +20,7 @@ import Job from "../components/Job"
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Mathieu Anderson is a web dev" />
       <div className="layout-subgrid-left">
         <Box className="Section-1" heading="Nice to meet you">
           <p>
