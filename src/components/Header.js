@@ -52,25 +52,30 @@ const Header = () => {
         </div>
         <div className="header-mood">
           <button
-            className={`${mood === null && "default-active"}`}
+            title="Default"
+            className={`default-mood ${mood === null && "default-active"}`}
             onClick={() => handleSetMood("default")}
           >
             Default
           </button>
           <button
-            className={`${mood === 0 && "enthusiastic-active"}`}
+            title="Enthusiastic"
+            className={`enthusiastic-mood ${mood === 0 &&
+              "enthusiastic-active"}`}
             onClick={() => handleSetMood("enthusiastic")}
           >
             Enthusiastic
           </button>
           <button
-            className={`${mood === 1 && "curious-active"}`}
+            title="Furious"
+            className={`curious-mood ${mood === 1 && "curious-active"}`}
             onClick={() => handleSetMood("curious")}
           >
             Curious
           </button>
           <button
-            className={`${mood === 2 && "openminded-active"}`}
+            title="Openminded"
+            className={`openminded-mood ${mood === 2 && "openminded-active"}`}
             onClick={() => handleSetMood("openminded")}
           >
             Open-minded
