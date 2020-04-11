@@ -6,9 +6,7 @@ const MoodContainer = ({ qualifiers, initialQualifier, currentMood }) => {
     qualifiers.find(q => currentMood === q.index) || initialQualifier
 
   return (
-    <button className={activeMood.whimsyClassName}>
-      {activeMood.whimsyText}
-    </button>
+    <div className={activeMood.whimsyClassName}>{activeMood.whimsyText}</div>
   )
 }
 
