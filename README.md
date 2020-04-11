@@ -26,8 +26,6 @@ yarn build
 yarn serve
 ```
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
-
 # TODO
 
 If there is something I here is always ways to improve things. Here are a few of the features I would like to add :
