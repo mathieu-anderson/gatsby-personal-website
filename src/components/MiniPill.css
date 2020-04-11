@@ -16,9 +16,11 @@
 }
 
 .minipill-name {
+  max-height: 1.2rem;
   visibility: hidden;
   font-size: 0.9rem;
   font-weight: bold;
+  line-height: 1.6rem;
 }
 
 .open .minipill-name {
