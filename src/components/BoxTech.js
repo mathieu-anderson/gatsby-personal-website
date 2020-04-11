@@ -57,7 +57,7 @@ const BoxTech = () => {
             since: "2016",
             frequency: "every day",
             like:
-              "the flexibility to be used in the front-end and the back-end, the speed and ease of development.",
+              "the flexibility to be used in the front-end and the back-end, the speed and ease of development",
           }}
         />
         <Pill
@@ -67,7 +67,7 @@ const BoxTech = () => {
             since: "2019",
             frequency: "every day",
             like:
-              "the safety and productivity boost it brings to large and complex projects.",
+              "the safety and productivity boost it brings to large and complex projects",
           }}
         />
         <Pill
@@ -85,7 +85,7 @@ const BoxTech = () => {
           icon={<ReduxIcon />}
           details={{
             since: "2016",
-            frequency: "every day",
+            frequency: "every day (at work)",
             like:
               "the core simplicity of the design and the power it offers (to be used wisely!)",
           }}
@@ -114,9 +114,10 @@ const BoxTech = () => {
           icon={<NodeIcon />}
           details={{
             since: "2016",
-            frequency: "only in side projects",
+            frequency:
+              "every day (as JS runtime) / side projects (as back-end)",
             like:
-              "the package ecosystem around NPM and the ability to write JS / TS in the back-end for truly isomorphic apps",
+              "the NPM package ecosystem and the empowering ability to write JavaScript in the back-end",
           }}
         />
         <Pill
@@ -124,7 +125,7 @@ const BoxTech = () => {
           icon={<WebpackIcon />}
           details={{
             since: "2016",
-            frequency: "every day",
+            frequency: "every day (as bundler of all my projects)",
             like:
               "the amount of control it gives over a build and the excellent developer experience it enables",
           }}
@@ -146,7 +147,7 @@ const BoxTech = () => {
             since: "2016",
             frequency: "every day",
             like:
-              "the security, debugging and collaboration potential it offers.",
+              "the security, debugging and collaboration potential it offers",
           }}
         />
       </div>
