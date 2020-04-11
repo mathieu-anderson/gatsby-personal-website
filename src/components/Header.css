@@ -1,16 +1,58 @@
-.header-social {
+.header-buttons {
   background-color: var(--white);
   z-index: 1000;
   min-width: 172px;
   position: sticky;
   top: 0;
   padding-top: 0.8rem;
-  padding-bottom: 0.6rem;;
+  padding-bottom: 0.6rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 .header-social > a {
  margin-left: 1rem;
  border: 0;
+}
+
+.header-mood {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.header-mood > button {
+  margin-left: 1rem;
+}
+
+.header-mood > button:hover {
+  cursor: pointer;
+}
+
+.header-mood > button:last-of-type {
+  margin-right: 1rem;
+}
+
+.default-active{
+  color: var(--black);
+  font-weight: bold;
+  border-bottom: 2px solid var(--black);
+  content: 'Enthusiastic'
+}
+.curious-active{
+  color: var(--curious);
+  font-weight: bold;
+  border-bottom: 2px solid var(--curious);
+}
+.openminded-active{
+  color: var(--openminded);
+  font-weight: bold;
+  border-bottom: 2px solid var(--openminded);
+}
+.enthusiastic-active{
+  color: var(--enthusiastic);
+  font-weight: bold;
+  border-bottom: 2px solid var(--enthusiastic);
 }
 
 /* Disable Link effect */
@@ -19,14 +61,24 @@
   background-color: var(--white);
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
   .header-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
-  .header-social {
-  padding-top: 0.6rem;
-  padding-bottom: 0.1rem;;
-}
+  .header-buttons {
+    padding-top: 0.6rem;
+    flex-flow: column nowrap;
+  }
+  .header-mood {
+    font-size: 0.9rem;
+    padding-bottom: 0.1rem;
+  }
+  .header-mood > button:last-of-type {
+    margin-right: 0;
+  }
+  .header-mood > button:first-of-type {
+    margin-left: 0;
+  }
 }
 
 a:first-of-type {

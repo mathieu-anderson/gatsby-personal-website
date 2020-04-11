@@ -12,6 +12,9 @@
   --node: rgba(51, 153, 51, 1);
   --circleci: rgba(52, 52, 52, 1);
   --css: rgba(21, 114, 182, 1);
+  --enthusiastic: #E17701;
+  --curious: #10A674;
+  --openminded: #6241C7;
 }
 
 .layout-grid {
@@ -697,24 +700,24 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
   html {
     font-size: 20%;
     line-height: 1.9em;
   }
   p, ul, li {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .job-dates{
-    font-size: 1.3rem !important;
+    font-size: 1.4rem !important;
   }
    .job-role {
-    font-size: 1.5rem !important;
+    font-size: 1.4rem !important;
   }
   div {
     font-size: 1.2rem;
   }
-  h3 {
+  h2 {
     font-size: 1.6rem;
   }
 }

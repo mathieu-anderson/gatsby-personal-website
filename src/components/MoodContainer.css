@@ -1,0 +1,46 @@
+
+.enthusiastic{
+  color: #E17701;
+  animation: rumble .0625s linear;
+}
+.enthusiastic:hover {
+  animation: rumble .0625s infinite linear;
+}
+
+.openminded {
+  color: #6241C7;
+  animation: lift 0.7s;
+}
+.openminded:hover {
+  animation: lift infinite 0.7s;
+}
+
+.curious {
+  color: #10A674;
+  animation: floaty 1.3s linear;
+}
+.curious:hover {
+  animation: floaty 1.3s infinite linear;
+}
+
+
+@keyframes rumble {
+  25% {transform: translate(3px, 0px);}
+  50% {transform: translate(0px, -3px);}
+  75% {transform: translate(-3px, 0px);}
+  500% {transform: translate(0px, 3px);}
+}
+
+@keyframes lift {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(-10px);}
+  100% {transform: translateY(0px);}
+}
+
+@keyframes floaty {
+  0% {transform: rotate(0deg) translateX(0px) rotate(0deg); }
+  25% {transform: rotate(180deg) translateX(3px) rotate(-180deg); }
+  50% {transform: rotate(360deg) translateX(6px) rotate(-360deg); }
+  75% {transform: rotate(180deg) translateX(3px) rotate(-180deg); }
+  100% {transform: rotate(0deg) translateX(0px) rotate(-0deg); }
+}

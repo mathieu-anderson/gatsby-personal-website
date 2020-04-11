@@ -9,7 +9,7 @@ export const GithubIcon = () => {
       href="https://github.com/mathieu-anderson"
     >
       <svg
-        className="social-icon icon-flip github"
+        className="social-icon icon-wiggle github"
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@ export const MediumIcon = () => {
       href="https://medium.com/@syllaband"
     >
       <svg
-        className="social-icon icon-flip medium"
+        className="social-icon icon-wiggle medium"
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ export const TwitterIcon = () => {
       href="https://twitter.com/syllaband"
     >
       <svg
-        className="social-icon icon-flip twitter"
+        className="social-icon icon-wiggle twitter"
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ export const LinkedinIcon = () => {
       href="https://www.linkedin.com/in/mathieuanderson/"
     >
       <svg
-        className="social-icon icon-flip linkedin"
+        className="social-icon icon-wiggle linkedin"
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
