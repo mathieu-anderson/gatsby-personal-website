@@ -34,7 +34,7 @@
 
 .open .pill-details {
   margin: 0 0.5em 0.5em 0.5em;
-  max-height: 200px;
+  max-height: 250px;
   max-width: 500px;
   transform-origin: top;
   transition: max-height 0.2s, max-width 0.1s !important;

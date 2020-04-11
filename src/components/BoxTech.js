@@ -96,9 +96,7 @@ const BoxTech = () => {
           details={{
             since: "2016",
             frequency: "every day",
-            like: `the potential to create anything with enough knowledge (like ${(
-              <a href="https://youtu.be/wlfmSJIyg_E">Mario Kart</a>
-            )})`,
+            like: "the potential to create anything with enough knowledge",
           }}
         />
         <Pill
