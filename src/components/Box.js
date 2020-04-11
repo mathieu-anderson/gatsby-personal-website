@@ -3,11 +3,14 @@ import { WhimsyContainer } from "../hooks/useWhimsy"
 
 import "./Box.css"
 
-const Box = ({ children, heading, className }) => {
+const Box = ({ children, qualifiers, initialQualifier, className }) => {
   return (
     <section className={`${className} box-container`}>
       <h2 className="box-heading">
-        <WhimsyContainer>{heading}</WhimsyContainer>
+        <WhimsyContainer
+          qualifiers={qualifiers}
+          initialQualifier={initialQualifier}
+        />
       </h2>
       {children}
     </section>

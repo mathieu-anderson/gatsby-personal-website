@@ -5,20 +5,44 @@ import useWhimsy from "../hooks/useWhimsy"
 import "./Header.css"
 import "../hooks/useWhimsy.css"
 
+const qualifiers = [
+  {
+    index: 0,
+    whimsyClassName: "enthusiastic",
+    whimsyText: "an enthusiastic",
+  },
+  {
+    index: 1,
+    whimsyClassName: "curious",
+    whimsyText: "a curious",
+  },
+  {
+    index: 2,
+    whimsyClassName: "openminded",
+    whimsyText: "an open-minded",
+  },
+]
+
+const initialQualifier = {
+  index: null,
+  whimsyClassName: "",
+  whimsyText: "a",
+}
+
 const Header = () => {
   const {
     activateWhimsy,
     deactivateWhimsy,
-    adjective,
-    adjectiveClassName,
-  } = useWhimsy()
+    whimsyClassName,
+    whimsyText,
+  } = useWhimsy(qualifiers, initialQualifier)
 
   return (
     <>
       <header>
         <h1 className="header-title">
           <button
-            className={adjectiveClassName}
+            className={whimsyClassName}
             onMouseDown={() => {
               activateWhimsy()
             }}
@@ -32,8 +56,8 @@ const Header = () => {
               deactivateWhimsy()
             }}
           >
-            {`Mathieu Anderson is ${adjective} web dev`}
-            {adjectiveClassName === "curious" && (
+            {`Mathieu Anderson is ${whimsyText} web dev`}
+            {whimsyClassName === "curious" && (
               <span className="question-mark">?</span>
             )}
           </button>

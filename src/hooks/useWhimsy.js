@@ -1,31 +1,7 @@
 import React from "react"
 import "./useWhimsy.css"
 
-const useWhimsy = () => {
-  const qualifiers = [
-    {
-      index: 0,
-      adjectiveClassName: "enthusiastic",
-      adjective: "an enthusiastic",
-    },
-    {
-      index: 1,
-      adjectiveClassName: "curious",
-      adjective: "a curious",
-    },
-    {
-      index: 2,
-      adjectiveClassName: "openminded",
-      adjective: "an open-minded",
-    },
-  ]
-
-  const initialQualifier = {
-    index: null,
-    adjectiveClassName: "",
-    adjective: "a",
-  }
-
+const useWhimsy = (qualifiers, initialQualifier) => {
   const getNextQualifiers = previousQualifier => {
     if (
       previousQualifier === null ||
@@ -38,7 +14,7 @@ const useWhimsy = () => {
   // Only activate the nudging wiggle until a user has clicked the title
   const [qualifier, setQualifier] = React.useState({
     ...initialQualifier,
-    adjectiveClassName: "nudge",
+    whimsyClassName: "nudge",
   })
   const [previousQualifier, setPreviousQualifier] = React.useState(null)
 
@@ -51,31 +27,36 @@ const useWhimsy = () => {
     setQualifier(initialQualifier)
   }
 
-  const { adjectiveClassName, adjective } = qualifier
+  const { whimsyClassName, whimsyText } = qualifier
 
   return {
     WhimsyContainer,
     activateWhimsy,
     deactivateWhimsy,
-    adjective,
-    adjectiveClassName,
+    whimsyText,
+    whimsyClassName,
   }
 }
 
 export default useWhimsy
 
 // Need to figure out how to make this one work!
-export const WhimsyContainer = ({ children }) => {
-  const { adjectiveClassName, activateWhimsy, deactivateWhimsy } = useWhimsy()
+export const WhimsyContainer = ({ children, qualifiers, initialQualifier }) => {
+  const {
+    whimsyClassName,
+    whimsyText,
+    activateWhimsy,
+    deactivateWhimsy,
+  } = useWhimsy(qualifiers, initialQualifier)
   return (
     <button
-      className={adjectiveClassName}
+      className={whimsyClassName}
       onMouseDown={activateWhimsy}
       onMouseUp={deactivateWhimsy}
       onTouchStart={activateWhimsy}
       onTouchEnd={deactivateWhimsy}
     >
-      {children}
+      {whimsyText}
     </button>
   )
 }
