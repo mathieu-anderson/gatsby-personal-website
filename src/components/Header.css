@@ -75,8 +75,8 @@
 }
 
 @media only screen and (max-width: 580px) {
-  .header-title {
-    font-size: 1.7rem;
+  .header-title > div {
+    font-size: 1.7rem !important;
   }
   .header-buttons {
     padding-top: 0.6rem;
