@@ -5,26 +5,22 @@ import MoodContainer from "./MoodContainer"
 import "./Header.css"
 import { MoodContext } from "../hooks/useMoodContext"
 
-const qualifiers = [
-  {
-    index: 0,
+const qualifiers = {
+  enthusiastic: {
     whimsyClassName: "enthusiastic",
     whimsyText: "Mathieu Anderson is an enthusiastic web dev",
   },
-  {
-    index: 1,
+  curious: {
     whimsyClassName: "curious",
     whimsyText: "Mathieu Anderson is a curious web dev",
   },
-  {
-    index: 2,
+  openminded: {
     whimsyClassName: "openminded",
     whimsyText: "Mathieu Anderson is an open-minded web dev",
   },
-]
+}
 
 const initialQualifier = {
-  index: null,
   whimsyClassName: "",
   whimsyText: "Mathieu Anderson is a web dev",
 }

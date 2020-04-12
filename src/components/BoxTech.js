@@ -15,26 +15,22 @@ import {
 } from "../components/Icons"
 import { MoodContext } from "../hooks/useMoodContext"
 
-const qualifiers = [
-  {
-    index: 0,
+const qualifiers = {
+  enthusiastic: {
     whimsyClassName: "enthusiastic",
     whimsyText: "Exciting stuff!",
   },
-  {
-    index: 1,
+  curious: {
     whimsyClassName: "curious",
     whimsyText: "A fave of yours?",
   },
-  {
-    index: 2,
+  openminded: {
     whimsyClassName: "openminded",
     whimsyText: "Open to more",
   },
-]
+}
 
 const initialQualifier = {
-  index: null,
   whimsyClassName: "",
   whimsyText: "Most used tools",
 }

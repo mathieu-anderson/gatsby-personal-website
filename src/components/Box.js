@@ -10,6 +10,7 @@ const Box = ({
   currentMood,
   className,
 }) => {
+  console.log(currentMood)
   return (
     <section className={`${className} box-container`}>
       <h2 className="box-heading">

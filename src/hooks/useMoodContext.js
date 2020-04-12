@@ -2,9 +2,9 @@ import React from "react"
 
 const moods = {
   default: null,
-  enthusiastic: 0,
-  curious: 1,
-  openminded: 2,
+  enthusiastic: "enthusiastic",
+  curious: "curious",
+  openminded: "openminded",
 }
 
 export const MoodContext = React.createContext(moods)

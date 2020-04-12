@@ -15,26 +15,22 @@ import {
 import Job from "../components/Job"
 import { MoodContext } from "../hooks/useMoodContext"
 
-const qualifiers = [
-  {
-    index: 0,
+const qualifiers = {
+  enthusiastic: {
     whimsyClassName: "enthusiastic",
     whimsyText: "Getting it done!",
   },
-  {
-    index: 1,
+  curious: {
     whimsyClassName: "curious",
     whimsyText: "Who will be next?",
   },
-  {
-    index: 2,
+  openminded: {
     whimsyClassName: "openminded",
     whimsyText: "Always learning",
   },
-]
+}
 
 const initialQualifier = {
-  index: null,
   whimsyClassName: "",
   whimsyText: "My teams",
 }

@@ -2,26 +2,21 @@ import React from "react"
 import Box from "./Box"
 import { MoodContext } from "../hooks/useMoodContext"
 
-const qualifiers = [
-  {
-    index: 0,
+const qualifiers = {
+  enthusiastic: {
     whimsyClassName: "enthusiastic",
     whimsyText: "Happy you're here!",
   },
-  {
-    index: 1,
+  curious: {
     whimsyClassName: "curious",
     whimsyText: "How are you?",
   },
-  {
-    index: 2,
+  openminded: {
     whimsyClassName: "openminded",
     whimsyText: "Welcome",
   },
-]
-
+}
 const initialQualifier = {
-  index: null,
   whimsyClassName: "",
   whimsyText: "Nice to meet you",
 }
