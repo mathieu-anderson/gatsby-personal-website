@@ -25,12 +25,6 @@ svg:hover.github {
 .social-icon {
   height: 1.5rem;
 }
-.social-link {
-  box-shadow: none;
-}
-.social-link:active, .social-link:hover {
-  box-shadow: none;
-}
 
 @media only screen and (max-width: 580px) {
   .social-icon {
