@@ -110,7 +110,6 @@ template {
   display: none;
 }
 a {
-  display: inline-block;
   width: fit-content;
   background-color: transparent;
   text-decoration: none;
@@ -121,6 +120,7 @@ a:active,
 a:hover {
   outline-width: 0;
   animation: miniLift 0.1s;
+  color: var(--black-light)
 }
 abbr[title] {
   border-bottom: none;
