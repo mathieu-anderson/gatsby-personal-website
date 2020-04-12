@@ -119,7 +119,6 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
-  animation: miniLift 0.1s;
   color: var(--black-light)
 }
 abbr[title] {
