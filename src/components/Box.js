@@ -10,9 +10,8 @@ const Box = ({
   currentMood,
   className,
 }) => {
-  console.log(currentMood)
   return (
-    <section className={`${className} box-container`}>
+    <section className={`${className} box-${currentMood}  box-container`}>
       <h2 className="box-heading">
         <MoodContainer
           qualifiers={qualifiers}

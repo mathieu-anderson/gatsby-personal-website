@@ -1,11 +1,12 @@
 .box-container {
   padding: 0 1em .7em 1em;
   border: 2px solid var(--black);
-  box-shadow: 10px 15px 0 var(--black);
+  box-shadow: 10px 15px 0 var(--black-light);
   margin-right: 10px;
   margin-bottom: 2em;
   height: min-content;
   background-color: var(--white);
+  transition: box-shadow 0.1s ease-in-out;
 }
 
 .box-heading {
@@ -13,4 +14,14 @@
   text-align: center;
   padding: 0.5rem;
   border-bottom: 2px solid var(--black);
+}
+
+.box-enthusiastic{
+  box-shadow: 10px 15px 0 var(--enthusiastic-light);
+}
+.box-curious{
+  box-shadow: 10px 15px 0 var(--curious-light);
+}
+.box-openminded{
+ box-shadow: 10px 15px 0 var(--openminded-light);
 }

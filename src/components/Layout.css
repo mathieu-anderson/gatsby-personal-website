@@ -1,6 +1,7 @@
 :root {
-  --black: black;
-  --white: #fff;
+  --black: rgba(0, 0, 0, 1);
+  --black-light: rgba(0, 0, 0, 0.75);
+  --white: rgba(255, 255, 255, 1);
   --typescript: rgba(0, 122, 204, 1);
   --react: rgba(97, 218, 251, 1);
   --redux: rgba(118, 74, 188, 1);
@@ -12,9 +13,12 @@
   --node: rgba(51, 153, 51, 1);
   --circleci: rgba(52, 52, 52, 1);
   --css: rgba(21, 114, 182, 1);
-  --enthusiastic: #E17701;
-  --curious: #10A674;
-  --openminded: #6241C7;
+  --enthusiastic: rgba(225, 119, 1, 1);
+  --curious: rgba(16, 166, 116, 1);
+  --openminded: #rgba(98, 65, 199, 1);
+  --enthusiastic-light: rgba(225, 119, 1, 0.7);
+  --curious-light: rgba(16, 166, 116, 0.7);
+  --openminded-light: rgba(98, 65, 199, 0.7);
 }
 
 .layout-grid {

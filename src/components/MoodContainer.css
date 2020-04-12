@@ -1,4 +1,8 @@
 
+.mood-container {
+  transition: 0.1s ease-in-out
+}
+
 .enthusiastic{
   color: #E17701;
   animation: rumble 0.1s linear;
