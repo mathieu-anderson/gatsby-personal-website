@@ -115,15 +115,12 @@ a {
   background-color: transparent;
   text-decoration: none;
   color: var(--black);
-  font-weight: bold;
-  box-shadow: inset 0 -1px 0 var(--black);
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:active,
 a:hover {
   outline-width: 0;
   animation: miniLift 0.1s;
-  box-shadow: inset 0 -2px 0 var(--black);
 }
 abbr[title] {
   border-bottom: none;
