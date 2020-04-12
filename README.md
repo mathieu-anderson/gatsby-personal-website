@@ -30,10 +30,11 @@ yarn serve
 
 If there is something I learnt here is always ways to improve things. Here are a few of the features I would like to add :
 
- - [ ] P1: A self hosted blog. Medium is nice, but owning your content is ideal. With Gatsby too!
- - [ ] P2: Dark mod. Probably through React context, probably need some refactor of my CSS 😬
- - [ ] P2: A separate page for side-projects. They are not very good, but deserve better than links to Github repo.
- - [ ] P3: Maybe [sound](https://joshwcomeau.com/react/announcing-use-sound-react-hook/)?
- - [ ] P3: Make it a PWA. Gatsby enables it way more easily than doing everything by hand.
- - [ ] P3: More polish (better link hover effect, try using the mood theme colors more in the design, ...)
-
+ - [ ] P1 - A self hosted blog. Medium is nice, but owning your content is ideal. With Gatsby too!
+ - [ ] P2 - Dark mod. Probably through React context, probably need some refactor of my CSS 😬
+ - [ ] P2 - A separate page for side-projects. They are not very good, but deserve better than links to Github repo.
+ - [ ] P3 - Maybe [sound](https://joshwcomeau.com/react/announcing-use-sound-react-hook/)?
+ - [ ] P3 - Make it a PWA. Gatsby enables it way more easily than doing everything by hand.
+ - [ ] P3 - Polish: better link hover effect
+ - [ ] P3 - Polish: Try putting side project / article links in boxes and be more descriptive. Add tech tag too.
+ - [ ] P3 - Add soft skills to 'Most used tools' box? Public speaking, written communication, pair programming...
