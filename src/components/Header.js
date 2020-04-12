@@ -56,22 +56,23 @@ const Header = () => {
           </button>
           <button
             title="Enthusiastic"
-            className={`enthusiastic-mood ${mood === 0 &&
+            className={`enthusiastic-mood ${mood === "enthusiastic" &&
               "enthusiastic-active"}`}
             onClick={() => handleSetMood("enthusiastic")}
           >
             Enthusiastic
           </button>
           <button
-            title="Furious"
-            className={`curious-mood ${mood === 1 && "curious-active"}`}
+            title="Curious"
+            className={`curious-mood ${mood === "curious" && "curious-active"}`}
             onClick={() => handleSetMood("curious")}
           >
             Curious
           </button>
           <button
             title="Openminded"
-            className={`openminded-mood ${mood === 2 && "openminded-active"}`}
+            className={`openminded-mood ${mood === "openminded" &&
+              "openminded-active"}`}
             onClick={() => handleSetMood("openminded")}
           >
             Open-minded
