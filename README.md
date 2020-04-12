@@ -35,4 +35,5 @@ If there is something I learnt here is always ways to improve things. Here are a
  - [ ] P2: A separate page for side-projects. They are not very good, but deserve better than links to Github repo.
  - [ ] P3: Maybe [sound](https://joshwcomeau.com/react/announcing-use-sound-react-hook/)?
  - [ ] P3: Make it a PWA. Gatsby enables it way more easily than doing everything by hand.
+ - [ ] P3: More polish (better link hover effect, try using the mood theme colors more in the design, ...)
 
