@@ -35,6 +35,6 @@ If there is something I learnt here is always ways to improve things. Here are a
  - [ ] P2 - A separate page for side-projects. They are not very good, but deserve better than links to Github repo.
  - [ ] P3 - Maybe [sound](https://joshwcomeau.com/react/announcing-use-sound-react-hook/)?
  - [ ] P3 - Make it a PWA. Gatsby enables it way more easily than doing everything by hand.
- - [ ] P3 - Polish: better link hover effect
+ - [x] P3 - Polish: better link hover effect
  - [ ] P3 - Polish: Try putting side project / article links in boxes and be more descriptive. Add tech tag too.
  - [ ] P3 - Add soft skills to 'Most used tools' box? Public speaking, written communication, pair programming...
