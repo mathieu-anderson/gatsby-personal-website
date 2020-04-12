@@ -25,6 +25,12 @@ svg:hover.github {
 .social-icon {
   height: 1.5rem;
 }
+.social-link {
+  box-shadow: none;
+}
+.social-link:active, .social-link:hover {
+  box-shadow: none;
+}
 
 @media only screen and (max-width: 580px) {
   .social-icon {
@@ -35,16 +41,4 @@ svg:hover.github {
 .tech-icon {
   transition: 0.2s all;
   height: 1.2rem
-}
-
-.icon-wiggle:hover {
- animation: wiggle 0.1s;
-}
-
-@keyframes wiggle {
-  0% {transform: translateX(0px);}
-  25% {transform: translateX(-3px);}
-  50% {transform: translateX(0px);}
-  75% {transform: translateX(3px);}
-  100% {transform: translateX(0px);}
 }

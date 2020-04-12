@@ -23,7 +23,6 @@
 
 .header-mood > button {
   margin-left: 1rem;
-  border-bottom: 1px solid transparent;
 }
 
 .header-mood > button:hover {
@@ -36,47 +35,42 @@
 
 .default-mood:hover {
   color: var(--black);
-  border-bottom: 1px solid var(--black);
+  box-shadow: inset 0 -1px 0 var(--black);
 }
 .curious-mood:hover {
   color: var(--curious);
-  border-bottom: 1px solid var(--curious);
+  box-shadow: inset 0 -1px 0 var(--curious);
 }
 .openminded-mood:hover {
   color: var(--openminded);
-  border-bottom: 1px solid var(--openminded)
+  box-shadow: inset 0 -1px 0 var(--openminded)
 }
 .enthusiastic-mood:hover {
   color: var(--enthusiastic);
-  border-bottom: 1px solid var(--enthusiastic)
+  box-shadow: inset 0 -1px 0 var(--enthusiastic)
 }
 
 .default-active{
   color: var(--black);
-  border-bottom: 2px solid var(--black) !important;
-  animation: miniLift 0.1s;
-
+  box-shadow: inset 0 -2px 0 var(--black) !important;
 }
 .curious-active{
   color: var(--curious);
-  border-bottom: 2px solid var(--curious) !important;
-  animation: miniLift 0.1s;
+  box-shadow: inset 0 -2px 0 var(--curious) !important;
 }
 .openminded-active{
   color: var(--openminded);
-  border-bottom: 2px solid var(--openminded) !important;
-  animation: miniLift 0.1s;
+  box-shadow: inset 0 -2px 0 var(--openminded) !important;
 }
 .enthusiastic-active{
   color: var(--enthusiastic);
-  border-bottom: 2px solid var(--enthusiastic) !important;
-  animation: miniLift 0.1s;
+  box-shadow: inset 0 -2px 0 var(--enthusiastic) !important;
 }
 
 
 @keyframes miniLift {
   0% {transform: translateY(0px);}
-  50% {transform: translateY(-3px);}
+  50% {transform: translateY(-2px);}
   100% {transform: translateY(0px);}
 }
 
