@@ -2,10 +2,11 @@ import React from "react"
 import MiniPill from "./MiniPill"
 
 import "./Job.css"
+import HighlightContainer from "./HighlightContainer"
 
 const Job = ({ job, techList, children }) => {
   return (
-    <div class="job-container">
+    <HighlightContainer>
       <h3>{job.link}</h3>
       <p class="job-dates">{job.dates}</p>
       <p class="job-role">{job.role}</p>
@@ -14,8 +15,8 @@ const Job = ({ job, techList, children }) => {
           <MiniPill icon={icon} name={name} />
         ))}
       </div>
-      <p className="job-description">{children}</p>
-    </div>
+      <div className="job-description">{children}</div>
+    </HighlightContainer>
   )
 }
 

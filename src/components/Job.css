@@ -1,16 +1,3 @@
-.job-container:not(:last-child) {
-  border-bottom: 2px solid var(--black);
-  padding-bottom: 1em;
-}
-
-.job-container:not(:first-of-type) {
-  padding-top: 1em;
-}
-
-.job-container > p {
-  margin-bottom: 0;
-}
-
 .job-dates {
   font-size: 0.9rem;
   font-style: italic;

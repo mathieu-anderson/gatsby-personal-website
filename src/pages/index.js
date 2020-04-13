@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import BoxGreetings from "../components/BoxGreetings"
 import BoxTech from "../components/BoxTech"
 import BoxJobs from "../components/BoxJobs"
-import BoxSideProjects from "../components/BoxSideProjects"
+import BoxProjects from "../components/BoxProjects"
 import { MoodProvider } from "../hooks/useMoodContext"
 
 const IndexPage = () => {
@@ -19,7 +19,7 @@ const IndexPage = () => {
         </div>
         <div className="layout-subgrid-right">
           <BoxTech />
-          <BoxSideProjects />
+          <BoxProjects />
         </div>
       </Layout>
     </MoodProvider>

@@ -1,0 +1,28 @@
+.highlight-container {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1em 1em 1em 1em;
+  height: min-content;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.1s ease-in-out;
+  box-shadow: 10px 10px 0 var(--black-smoke);
+  border:  2px solid  var(--black-smoke);
+  margin-right: 10px;
+}
+
+.highlight-container:last-of-type {
+ margin-bottom: 1rem;
+}
+
+.highlight-enthusiastic {
+  box-shadow: 10px 10px 0 var(--enthusiastic-smoke);
+  border:  2px solid  var(--enthusiastic-smoke);
+}
+.highlight-curious {
+  box-shadow: 10px 10px 0 var(--curious-smoke);
+  border:  2px solid  var(--curious-smoke);
+}
+.highlight-openminded {
+  box-shadow: 10px 10px 0 var(--openminded-smoke);
+  border:  2px solid  var(--openminded-smoke);
+}

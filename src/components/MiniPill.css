@@ -40,7 +40,7 @@
 .typescript-minipill:hover {
   border: 2px solid var(--typescript);
   color: var(--typescript);
-  box-shadow: 4px 6px 0px var(--typescript);
+  box-shadow: 4px 4px 0px var(--typescript);
 }
 .typescript-minipill:hover .typescript-icon {
   fill: var(--typescript);
@@ -49,7 +49,7 @@
 .open.typescript-minipill {
   border: 2px solid var(--typescript);
   color: var(--typescript);
-  box-shadow: 4px 6px 0px var(--typescript);
+  box-shadow: 4px 4px 0px var(--typescript);
 }
 
 .open.typescript-minipill .minipill-name{
@@ -71,7 +71,7 @@
   transition: 0.2s all;
   border: 2px solid var(--react);
   color: var(--react);
-  box-shadow: 4px 6px 0px var(--react);
+  box-shadow: 4px 4px 0px var(--react);
 }
 .react-minipill:hover .react-icon  {
   transition: 0.2s all;
@@ -80,7 +80,7 @@
 .open.react-minipill {
   border: 2px solid var(--react);
   color: var(--react);
-  box-shadow: 4px 6px 0px var(--react);
+  box-shadow: 4px 4px 0px var(--react);
 }
 
 .open.react-minipill .minipill-name{
@@ -102,7 +102,7 @@
   transition: 0.2s all;
   border: 2px solid var(--redux);
   color: var(--redux);
-  box-shadow: 4px 6px 0px var(--redux);
+  box-shadow: 4px 4px 0px var(--redux);
 }
 .redux-minipill:hover .redux-icon  {
   transition: 0.2s all;
@@ -111,7 +111,7 @@
 .open.redux-minipill {
   border: 2px solid var(--redux);
   color: var(--redux);
-  box-shadow: 4px 6px 0px var(--redux);
+  box-shadow: 4px 4px 0px var(--redux);
 }
 
 .open.redux-minipill .minipill-name{
@@ -133,7 +133,7 @@
   transition: 0.2s all;
   border: 2px solid var(--webpack);
   color: var(--webpack);
-  box-shadow: 4px 6px 0px var(--webpack);
+  box-shadow: 4px 4px 0px var(--webpack);
 }
 .webpack-minipill:hover .webpack-icon  {
   transition: 0.2s all;
@@ -142,7 +142,7 @@
 .open.webpack-minipill {
   border: 2px solid var(--webpack);
   color: var(--webpack);
-  box-shadow: 4px 6px 0px var(--webpack);
+  box-shadow: 4px 4px 0px var(--webpack);
 }
 
 .open.webpack-minipill .minipill-name{
@@ -164,7 +164,7 @@
   transition: 0.2s all;
   border: 2px solid var(--git);
   color: var(--git);
-  box-shadow: 4px 6px 0px var(--git);
+  box-shadow: 4px 4px 0px var(--git);
 }
 .git-minipill:hover .git-icon  {
   transition: 0.2s all;
@@ -173,7 +173,7 @@
 .open.git-minipill {
   border: 2px solid var(--git);
   color: var(--git);
-  box-shadow: 4px 6px 0px var(--git);
+  box-shadow: 4px 4px 0px var(--git);
 }
 
 .open.git-minipill .minipill-name{
@@ -195,7 +195,7 @@
   transition: 0.2s all;
   border: 2px solid var(--docker);
   color: var(--docker);
-  box-shadow: 4px 6px 0px var(--docker);
+  box-shadow: 4px 4px 0px var(--docker);
 }
 .docker-minipill:hover .docker-icon  {
   transition: 0.2s all;
@@ -204,7 +204,7 @@
 .open.docker-minipill {
   border: 2px solid var(--docker);
   color: var(--docker);
-  box-shadow: 4px 6px 0px var(--docker);
+  box-shadow: 4px 4px 0px var(--docker);
 }
 
 .open.docker-minipill .minipill-name{
@@ -226,7 +226,7 @@
   transition: 0.2s all;
   border: 2px solid var(--javascript);
   color: var(--javascript);
-  box-shadow: 4px 6px 0px var(--javascript);
+  box-shadow: 4px 4px 0px var(--javascript);
 }
 .javascript-minipill:hover .javascript-icon  {
   transition: 0.2s all;
@@ -235,7 +235,7 @@
 .open.javascript-minipill {
   border: 2px solid var(--javascript);
   color: var(--javascript);
-  box-shadow: 4px 6px 0px var(--javascript);
+  box-shadow: 4px 4px 0px var(--javascript);
 }
 
 .open.javascript-minipill .minipill-name{
@@ -257,7 +257,7 @@
   transition: 0.2s all;
   border: 2px solid var(--sass);
   color: var(--sass);
-  box-shadow: 4px 6px 0px var(--sass);
+  box-shadow: 4px 4px 0px var(--sass);
 }
 .sass-minipill:hover .sass-icon  {
   transition: 0.2s all;
@@ -266,7 +266,7 @@
 .open.sass-minipill {
   border: 2px solid var(--sass);
   color: var(--sass);
-  box-shadow: 4px 6px 0px var(--sass);
+  box-shadow: 4px 4px 0px var(--sass);
 }
 
 .open.sass-minipill .minipill-name{
@@ -288,7 +288,7 @@
   transition: 0.2s all;
   border: 2px solid var(--node);
   color: var(--node);
-  box-shadow: 4px 6px 0px var(--node);
+  box-shadow: 4px 4px 0px var(--node);
 }
 .node-minipill:hover .node-icon  {
   transition: 0.2s all;
@@ -297,7 +297,7 @@
 .open.node-minipill {
   border: 2px solid var(--node);
   color: var(--node);
-  box-shadow: 4px 6px 0px var(--node);
+  box-shadow: 4px 4px 0px var(--node);
 }
 
 .open.node-minipill .minipill-name{
@@ -319,7 +319,7 @@
   transition: 0.2s all;
   border: 2px solid var(--circleci);
   color: var(--circleci);
-  box-shadow: 4px 6px 0px var(--circleci);
+  box-shadow: 4px 4px 0px var(--circleci);
 }
 .circleci-minipill:hover .circleci-icon  {
   transition: 0.2s all;
@@ -328,7 +328,7 @@
 .open.circleci-minipill {
   border: 2px solid var(--circleci);
   color: var(--circleci);
-  box-shadow: 4px 6px 0px var(--circleci);
+  box-shadow: 4px 4px 0px var(--circleci);
 }
 
 .open.circleci-minipill .minipill-name{
@@ -350,7 +350,7 @@
   transition: 0.2s all;
   border: 2px solid var(--css);
   color: var(--css);
-  box-shadow: 4px 6px 0px var(--css);
+  box-shadow: 4px 4px 0px var(--css);
 }
 .css-minipill:hover .css-icon  {
   transition: 0.2s all;
@@ -359,7 +359,7 @@
 .open.css-minipill {
   border: 2px solid var(--css);
   color: var(--css);
-  box-shadow: 4px 6px 0px var(--css);
+  box-shadow: 4px 4px 0px var(--css);
 }
 
 .open.css-minipill .minipill-name{

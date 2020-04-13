@@ -1,12 +1,12 @@
 .box-container {
-  padding: 0 1em .7em 1em;
-  border: 2px solid var(--black);
-  box-shadow: 10px 15px 0 var(--black-light);
+  padding: 0 1.2em .9em 1.2em;
+  border: 2px solid var(--black-light);
+  box-shadow: 10px 10px 0 var(--black-light);
   margin-right: 10px;
   margin-bottom: 2em;
   height: min-content;
   background-color: var(--white);
-  transition: box-shadow 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .box-heading {
@@ -14,15 +14,27 @@
   text-align: center;
   padding: 0.5rem;
   border-bottom: 2px solid var(--black);
-  transition: color 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .box-enthusiastic{
-  box-shadow: 10px 15px 0 var(--enthusiastic-light);
+  border: 2px solid var(--enthusiastic-light);
+  box-shadow: 10px 10px 0 var(--enthusiastic-light);
 }
 .box-curious{
-  box-shadow: 10px 15px 0 var(--curious-light);
+  border: 2px solid var(--curious-light);
+  box-shadow: 10px 10px 0 var(--curious-light);
 }
 .box-openminded{
- box-shadow: 10px 15px 0 var(--openminded-light);
+  border: 2px solid var(--openminded-light);
+  box-shadow: 10px 10px 0 var(--openminded-light);
+}
+.box-enthusiastic .box-heading {
+  border-bottom: 2px solid var(--enthusiastic-light);
+}
+.box-curious .box-heading {
+  border-bottom: 2px solid var(--curious-light);
+}
+.box-openminded .box-heading {
+  border-bottom: 2px solid var(--openminded-light);
 }

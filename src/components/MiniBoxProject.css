@@ -1,0 +1,101 @@
+.project-container {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1em 1em 0 1em;
+  height: min-content;
+  margin-bottom: 1rem;
+  background-color: var(--black-smoke);
+  transition: background-color 0.1s ease-in-out;
+}
+
+.project-enthusiastic {
+  background-color: var(--enthusiastic-smoke);
+}
+.project-curious {
+  background-color: var(--curious-smoke);
+}
+.project-openminded {
+  background-color: var(--openminded-smoke);
+}
+
+.project-container:last-of-type {
+  margin-bottom: 0;
+}
+
+.project-date {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.project-type {
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  width: fit-content;
+  padding: 0 0.2rem;
+  font-weight: bold;
+  margin: 0.3rem 0.3rem 0.3rem 0;
+  line-height: 1.6rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.project-description {
+  padding-top: 0.5rem;
+}
+
+/* Reuse this for display Github repo on hover of the icon lick to github repo */
+/* .minipill {
+  cursor: pointer;
+  margin: 0.3rem;
+  transition: 0.1s all;
+  min-width: 1.8rem;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.minipill-icon {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0.2em;
+}
+
+.minipill-name {
+  max-height: 1.2rem;
+  overflow: hidden;
+  display: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 1.4rem;
+  margin-top: 0.1rem;
+  max-width: 0;
+  transition: max-width 0.2s !important;
+}
+
+.typescript-minipill:hover .minipill-name {
+  display: inline-block;
+  transform-origin: left;
+  padding-right: 0.2rem;
+  max-width: 200px;
+  transition: max-width 0.2s !important;
+  animation: scaleInX 0.2s !important;
+}
+.typescript-minipill {
+  border: 2px solid var(--black);
+  background-color: var(--white);
+}
+.typescript-minipill .typescript-icon {
+  fill: var(--black);
+}
+.typescript-minipill:hover {
+  border: 2px solid var(--typescript);
+  color: var(--typescript);
+  box-shadow: 4px 6px 0px var(--typescript);
+}
+.typescript-minipill:hover .typescript-icon {
+  fill: var(--typescript);
+} */
