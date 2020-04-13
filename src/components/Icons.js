@@ -1,13 +1,9 @@
 import React from "react"
 import "./Icons.css"
 
-export const GithubIcon = () => {
+export const GithubIcon = ({ link }) => {
   return (
-    <a
-      className="social-link"
-      title="GitHub"
-      href="https://github.com/mathieu-anderson"
-    >
+    <a className="social-link" title="GitHub" href={link}>
       <svg
         className="social-icon icon-wiggle github"
         role="img"

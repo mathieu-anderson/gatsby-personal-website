@@ -41,7 +41,7 @@ const Header = () => {
       </header>
       <div className="header-buttons">
         <div className="header-social">
-          <GithubIcon />
+          <GithubIcon link="https://github.com/mathieu-anderson" />
           <MediumIcon />
           <TwitterIcon />
           <LinkedinIcon />

@@ -25,7 +25,10 @@ svg:hover.github {
 .social-icon {
   height: 1.5rem;
 }
-
+/* This is needed to be able to animate the links */
+.social-link {
+  display: inline-block;
+}
 .social-link:hover {
   animation: miniLift 0.1s;
 }
