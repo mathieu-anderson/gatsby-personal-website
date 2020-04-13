@@ -31,21 +31,23 @@ const BoxGreetings = () => {
       initialQualifier={initialQualifier}
       currentMood={mood}
     >
-      <p>
-        I am a <b>front-end</b> specialist. I love being part of
-        cross-functional teams and being the <b>logical glue</b> between the
-        back-end devs and the designers.
-      </p>
-      <p>
-        My favourite tool is currently <b>React</b>, but I love anything that
-        allows to build UIs in a <b>declarative way</b>. And I'm always eager to
-        adopt whatever is consensual in the team!
-      </p>
-      <p>
-        I come from a <b>fullstack background</b>. I am familiar with back-end
-        tech (Node, Go, SQL databases), and I'm delighted to dive into it when
-        it is required!
-      </p>
+      <div className="greetings-container">
+        <p>
+          I am a <b>front-end</b> specialist. I love being part of
+          cross-functional teams and being the <b>logical glue</b> between the
+          back-end devs and the designers.
+        </p>
+        <p>
+          My favourite tool is currently <b>React</b>, but I love anything that
+          allows to build UIs in a <b>declarative way</b>. And I'm always eager
+          to adopt whatever is consensual in the team!
+        </p>
+        <p>
+          I come from a <b>fullstack background</b>. I am familiar with back-end
+          tech (Node, Go, SQL databases), and I'm delighted to dive into it when
+          it is required!
+        </p>
+      </div>
     </Box>
   )
 }

@@ -609,7 +609,7 @@ blockquote *:last-child {
 li:last-child {
   margin-bottom: 0;
 }
-p *:last-child {
+p:last-child {
   margin-bottom: 0;
 }
 li > p {
@@ -694,25 +694,38 @@ pre tt:after {
 @media only screen and (max-width: 580px) {
   html {
     font-size: 20%;
-    line-height: 1.9em;
+    line-height: 1.7em;
   }
   p, ul, li, div {
-    font-size: 1.2rem;
-  }
-  .job-dates{
-    font-size: 1.4rem !important;
+    font-size: 1.1rem;
   }
    .job-role {
-    font-size: 1.4rem !important;
+    font-size: 1.3rem !important;
   }
   div {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .box-heading div {
     font-size: 1.6rem;
   }
   h4 {
     font-size: 1.2rem;
+  }
+  .box-container {
+    padding: 0 0.6rem 0.4rem 0.6rem !important;
+  }
+  .highlight-container {
+    margin-right: 0 !important;
+    box-shadow: none !important;
+    margin-bottom: 0.6rem !important;
+  }
+  .highlight-container:last-child {
+    margin-right: 0 !important;
+    box-shadow: none !important;
+    margin-bottom: 0.2rem !important;
+  }
+  .greetings-container {
+    padding: 0.5rem;
   }
 }
 @media only screen and (max-width: 800px) {

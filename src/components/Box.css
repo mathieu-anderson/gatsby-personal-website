@@ -1,5 +1,5 @@
 .box-container {
-  padding: 0 1.2em .9em 1.2em;
+  padding: 0 1.2rem .9rem 1.2rem;
   border: 2px solid var(--black-light);
   box-shadow: 10px 10px 0 var(--black-light);
   margin-right: 10px;
