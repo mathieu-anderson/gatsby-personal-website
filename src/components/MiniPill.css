@@ -30,11 +30,6 @@
   animation: scaleInX 0.1s !important;
 }
 
-@keyframes scaleInX {
-  from { transform: scaleX(0);  }
-  to { transform: scaleX(1); }
-}
-
 .typescript-minipill {
   border: 2px solid var(--black);
   background-color: var(--white)

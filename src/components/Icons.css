@@ -26,17 +26,18 @@ svg:hover.github {
   height: 1.5rem;
 }
 
-.social-icon:hover {
+.social-link:hover {
   animation: miniLift 0.1s;
-}
-
-@media only screen and (max-width: 580px) {
-  .social-icon {
-  height: 1.2rem;
-}
 }
 
 .tech-icon {
   transition: 0.2s all;
   height: 1.2rem
 }
+
+@media only screen and (max-width: 580px) {
+  .social-icon {
+    height: 1.2rem;
+  }
+}
+
