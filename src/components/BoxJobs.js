@@ -68,17 +68,20 @@ const BoxJobs = () => {
       >
         <ul>
           <li>
-            A dynamic growth startup selling a b2b promotion engine solution
+            <b>Who?</b> A dynamic growth startup selling a b2b promotion engine
+            solution
           </li>
           <li>
-            Sophisticated tech around Talang, a DSL to build and evaluate
-            user-defined rules safely and fast
+            <b>What?</b> A twofold product: a webapp to create flexible
+            rule-based marketing campaign, and a powerful API to evaluate
+            customer sessions according to those rules.
           </li>
           <li>
-            Building front-end features in collaboration with the UX/UI team and
-            the back-end team (geolocation, UI library), addressing tech debt,
-            optimizing build tools and DX (cut build time in half), learning to
-            mentor team members
+            <b>My role: </b>Building and maintaining front-end features in
+            collaboration with the UX/UI team and the back-end team
+            (geolocation, rule builder, UI redesign), optimizing build tools and
+            DX (cut build time in half), addressing tech debt and managing
+            dependencies.
           </li>
         </ul>
       </Job>
@@ -105,18 +108,20 @@ const BoxJobs = () => {
       >
         <ul>
           <li>
-            A mature startup providing an SEO service to thousands of users
-            daily
+            <b>Who?</b> A mature startup providing an SEO service to thousands
+            of users daily as a freemium model.
           </li>
           <li>
-            Deeply committed to high availability and continuous integration /
-            deployment through containerized micro-services, with multiple
-            deployment daily
+            <b>What?</b> Offer a limited free review for any url entered by the
+            user. Subscriptions open access to a keyword tool, PDF generation,
+            competitor tracking and analytics. Deeply committed to high
+            availability and continuous integration / deployment through
+            containerized micro-services, with multiple deployment daily
           </li>
           <li>
-            Built new features from back-end to front-end (PDF generation,
-            Facebook API metrics gathering, mailing service), addressed
-            maintenance issues (legacy PHP codebase), participated in
+            <b>My role: </b>Built new features from back-end to front-end (PDF
+            generation, Facebook API metrics gathering, mailing service),
+            addressed maintenance issues (legacy PHP codebase), participated in
             first-response effort during crisis
           </li>
         </ul>
