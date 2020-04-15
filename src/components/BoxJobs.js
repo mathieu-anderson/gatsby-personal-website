@@ -73,7 +73,7 @@ const BoxJobs = () => {
           </li>
           <li>
             <b>What?</b> A twofold product: a webapp to create flexible
-            rule-based marketing campaign, and a powerful API to evaluate
+            rule-based marketing campaigns, and a powerful API to evaluate
             customer sessions according to those rules.
           </li>
           <li>
