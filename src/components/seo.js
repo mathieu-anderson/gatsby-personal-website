@@ -68,6 +68,14 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:url`,
+          content: "https://matand.dev/",
+        },
+        {
+          property: `og:image`,
+          content: `src/images/favicon.png`,
+        },
+        {
           property: `og:title`,
           content: title,
         },
