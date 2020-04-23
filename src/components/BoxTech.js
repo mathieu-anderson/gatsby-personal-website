@@ -15,24 +15,24 @@ import {
 } from "../components/Icons"
 import { MoodContext } from "../hooks/useMoodContext"
 
-const qualifiers = {
+const moods = {
   enthusiastic: {
-    whimsyClassName: "enthusiastic",
-    whimsyText: "Exciting stuff!",
+    moodClassName: "enthusiastic",
+    moodText: "Exciting stuff!",
   },
   curious: {
-    whimsyClassName: "curious",
-    whimsyText: "A fave of yours?",
+    moodClassName: "curious",
+    moodText: "A fave of yours?",
   },
   openminded: {
-    whimsyClassName: "openminded",
-    whimsyText: "Open to more",
+    moodClassName: "openminded",
+    moodText: "Open to more",
   },
 }
 
-const initialQualifier = {
-  whimsyClassName: "",
-  whimsyText: "Most used tools",
+const initialMood = {
+  moodClassName: "",
+  moodText: "Most used tools",
 }
 
 const BoxTech = () => {
@@ -41,8 +41,8 @@ const BoxTech = () => {
   return (
     <Box
       className="Section-2"
-      initialQualifier={initialQualifier}
-      qualifiers={qualifiers}
+      initialMood={initialMood}
+      moods={moods}
       currentMood={mood}
     >
       <div className="pills-container">

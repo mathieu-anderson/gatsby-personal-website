@@ -2,23 +2,23 @@ import React from "react"
 import Box from "./Box"
 import { MoodContext } from "../hooks/useMoodContext"
 
-const qualifiers = {
+const moods = {
   enthusiastic: {
-    whimsyClassName: "enthusiastic",
-    whimsyText: "Happy you're here!",
+    moodClassName: "enthusiastic",
+    moodText: "Happy you're here!",
   },
   curious: {
-    whimsyClassName: "curious",
-    whimsyText: "How are you?",
+    moodClassName: "curious",
+    moodText: "How are you?",
   },
   openminded: {
-    whimsyClassName: "openminded",
-    whimsyText: "Welcome",
+    moodClassName: "openminded",
+    moodText: "Welcome",
   },
 }
-const initialQualifier = {
-  whimsyClassName: "",
-  whimsyText: "Nice to meet you",
+const initialMood = {
+  moodClassName: "",
+  moodText: "Nice to meet you",
 }
 
 const BoxGreetings = () => {
@@ -27,8 +27,8 @@ const BoxGreetings = () => {
   return (
     <Box
       className="Section-1"
-      qualifiers={qualifiers}
-      initialQualifier={initialQualifier}
+      moods={moods}
+      initialMood={initialMood}
       currentMood={mood}
     >
       <div className="greetings-container">

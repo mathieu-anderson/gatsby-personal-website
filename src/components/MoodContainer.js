@@ -1,12 +1,12 @@
 import React from "react"
 import "./MoodContainer.css"
 
-const MoodContainer = ({ qualifiers, initialQualifier, currentMood }) => {
-  const activeMood = qualifiers[currentMood] || initialQualifier
+const MoodContainer = ({ moods, initialMood, currentMood }) => {
+  const activeMood = moods[currentMood] || initialMood
 
   return (
-    <div className={`mood-container ${activeMood.whimsyClassName}`}>
-      {activeMood.whimsyText}
+    <div className={`mood-container ${activeMood.moodClassName}`}>
+      {activeMood.moodText}
     </div>
   )
 }

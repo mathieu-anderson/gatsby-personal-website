@@ -3,19 +3,13 @@ import MoodContainer from "./MoodContainer"
 
 import "./Box.css"
 
-const Box = ({
-  children,
-  qualifiers,
-  initialQualifier,
-  currentMood,
-  className,
-}) => {
+const Box = ({ children, moods, initialMood, currentMood, className }) => {
   return (
     <section className={`${className} box-${currentMood}  box-container`}>
       <h2 className="box-heading">
         <MoodContainer
-          qualifiers={qualifiers}
-          initialQualifier={initialQualifier}
+          moods={moods}
+          initialMood={initialMood}
           currentMood={currentMood}
         />
       </h2>

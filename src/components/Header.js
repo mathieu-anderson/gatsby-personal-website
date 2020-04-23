@@ -5,24 +5,24 @@ import MoodContainer from "./MoodContainer"
 import "./Header.css"
 import { MoodContext } from "../hooks/useMoodContext"
 
-const qualifiers = {
+const moods = {
   enthusiastic: {
-    whimsyClassName: "enthusiastic",
-    whimsyText: "Mathieu Anderson is an enthusiastic web dev",
+    moodClassName: "enthusiastic",
+    moodText: "Mathieu Anderson is an enthusiastic web dev",
   },
   curious: {
-    whimsyClassName: "curious",
-    whimsyText: "Mathieu Anderson is a curious web dev",
+    moodClassName: "curious",
+    moodText: "Mathieu Anderson is a curious web dev",
   },
   openminded: {
-    whimsyClassName: "openminded",
-    whimsyText: "Mathieu Anderson is an open-minded web dev",
+    moodClassName: "openminded",
+    moodText: "Mathieu Anderson is an open-minded web dev",
   },
 }
 
-const initialQualifier = {
-  whimsyClassName: "",
-  whimsyText: "Mathieu Anderson is a web dev",
+const initialMood = {
+  moodClassName: "",
+  moodText: "Mathieu Anderson is a web dev",
 }
 
 const Header = () => {
@@ -33,8 +33,8 @@ const Header = () => {
       <header>
         <h1 className="header-title">
           <MoodContainer
-            initialQualifier={initialQualifier}
-            qualifiers={qualifiers}
+            initialMood={initialMood}
+            moods={moods}
             currentMood={mood}
           />
         </h1>

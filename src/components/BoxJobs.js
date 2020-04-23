@@ -15,24 +15,24 @@ import {
 import Job from "../components/Job"
 import { MoodContext } from "../hooks/useMoodContext"
 
-const qualifiers = {
+const moods = {
   enthusiastic: {
-    whimsyClassName: "enthusiastic",
-    whimsyText: "Getting it done!",
+    moodClassName: "enthusiastic",
+    moodText: "Getting it done!",
   },
   curious: {
-    whimsyClassName: "curious",
-    whimsyText: "Who will be next?",
+    moodClassName: "curious",
+    moodText: "Who will be next?",
   },
   openminded: {
-    whimsyClassName: "openminded",
-    whimsyText: "Always learning",
+    moodClassName: "openminded",
+    moodText: "Always learning",
   },
 }
 
-const initialQualifier = {
-  whimsyClassName: "",
-  whimsyText: "My teams",
+const initialMood = {
+  moodClassName: "",
+  moodText: "My teams",
 }
 
 const BoxJobs = () => {
@@ -41,8 +41,8 @@ const BoxJobs = () => {
   return (
     <Box
       className="Section-3"
-      initialQualifier={initialQualifier}
-      qualifiers={qualifiers}
+      initialMood={initialMood}
+      moods={moods}
       currentMood={mood}
     >
       <Job

@@ -11,24 +11,24 @@ import {
   WebpackIcon,
 } from "./Icons"
 
-const qualifiers = {
+const moods = {
   enthusiastic: {
-    whimsyClassName: "enthusiastic",
-    whimsyText: "I have an idea!",
+    moodClassName: "enthusiastic",
+    moodText: "I have an idea!",
   },
   curious: {
-    whimsyClassName: "curious",
-    whimsyText: "How does it work?",
+    moodClassName: "curious",
+    moodText: "How does it work?",
   },
   openminded: {
-    whimsyClassName: "openminded",
-    whimsyText: "Sharing is caring",
+    moodClassName: "openminded",
+    moodText: "Sharing is caring",
   },
 }
 
-const initialQualifier = {
-  whimsyClassName: "",
-  whimsyText: "Writing",
+const initialMood = {
+  moodClassName: "",
+  moodText: "Writing",
 }
 
 const BoxProjects = () => {
@@ -37,8 +37,8 @@ const BoxProjects = () => {
   return (
     <Box
       className="Section-4"
-      initialQualifier={initialQualifier}
-      qualifiers={qualifiers}
+      initialMood={initialMood}
+      moods={moods}
       currentMood={mood}
     >
       <MiniBoxProject
