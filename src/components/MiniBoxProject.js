@@ -9,9 +9,9 @@ import "./MiniPill.css"
 const MiniBoxProject = ({ project, techList, children }) => {
   return (
     <HighlightContainer>
-      <h4>
+      <h3>
         <a href={project.link}>{project.name}</a>
-      </h4>
+      </h3>
 
       <div class="project-date">{project.date}</div>
       {project.repo && (

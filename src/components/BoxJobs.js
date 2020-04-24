@@ -68,16 +68,16 @@ const BoxJobs = () => {
       >
         <ul>
           <li>
-            <b>Who?</b> A dynamic growth startup selling a b2b promotion engine
-            solution
+            <em>Who?</em> A dynamic growth startup selling a b2b promotion
+            engine solution
           </li>
           <li>
-            <b>What?</b> A twofold product: a webapp to create flexible
+            <em>What?</em> A twofold product: a webapp to create flexible
             rule-based marketing campaigns, and a powerful API to evaluate
             customer sessions according to those rules.
           </li>
           <li>
-            <b>My role: </b>Building and maintaining front-end features in
+            <em>My role:</em> Building and maintaining front-end features in
             collaboration with the UX/UI team and the back-end team
             (geolocation, rule builder, UI redesign), optimizing build tools and
             DX (cut build time in half), addressing tech debt and managing
@@ -108,18 +108,18 @@ const BoxJobs = () => {
       >
         <ul>
           <li>
-            <b>Who?</b> A mature startup providing an SEO service to thousands
+            <em>Who?</em> A mature startup providing an SEO service to thousands
             of users daily as a freemium model.
           </li>
           <li>
-            <b>What?</b> Offer a limited free review for any url entered by the
-            user. Subscriptions open access to a keyword tool, PDF generation,
-            competitor tracking and analytics. Deeply committed to high
-            availability and continuous integration / deployment through
+            <em>What?</em> Offer a limited free review for any url entered by
+            the user. Subscriptions open access to a keyword tool, PDF
+            generation, competitor tracking and analytics. Deeply committed to
+            high availability and continuous integration / deployment through
             containerized micro-services, with multiple deployment daily
           </li>
           <li>
-            <b>My role: </b>Built new features from back-end to front-end (PDF
+            <em>My role:</em> Built new features from back-end to front-end (PDF
             generation, Facebook API metrics gathering, mailing service),
             addressed maintenance issues (legacy PHP codebase), participated in
             first-response effort during crisis

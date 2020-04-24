@@ -39,7 +39,7 @@ const Header = () => {
           />
         </h1>
       </header>
-      <div className="header-buttons">
+      <nav className="header-buttons">
         <div className="header-social">
           <GithubIcon link="https://github.com/mathieu-anderson" />
           <MediumIcon />
@@ -78,7 +78,7 @@ const Header = () => {
             Open-minded
           </button>
         </div>
-      </div>
+      </nav>
     </>
   )
 }
