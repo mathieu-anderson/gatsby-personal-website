@@ -5,6 +5,7 @@ const Pill = ({ icon, name, details }) => {
   const [showDetails, setShowDetails] = React.useState(false)
   return (
     <button
+      title={`${name} tag`}
       className={`${
         showDetails ? "open" : "close"
       } pill ${name.toLowerCase()}-pill`}
