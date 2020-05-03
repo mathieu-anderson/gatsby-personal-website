@@ -13,16 +13,16 @@ const MiniBoxProject = ({ project, techList, children }) => {
         <a href={project.link}>{project.name}</a>
       </h3>
 
-      <div class="project-date">{project.date}</div>
+      <div className="project-date">{project.date}</div>
       {project.repo && (
-        <div class="project-repo">
+        <div className="project-repo">
           <GithubIcon link={project.repo} />
         </div>
       )}
-      <div class="project-tags">
-        <div class="project-type">{project.type}</div>
-        {techList.map(({ icon, name }) => (
-          <MiniPill icon={icon} name={name} />
+      <div className="project-tags">
+        <div className="project-type">{project.type}</div>
+        {techList.map(({ icon, name }, index) => (
+          <MiniPill key={`${name}-${index}`} icon={icon} name={name} />
         ))}
       </div>
       <div className="project-description">{children}</div>
