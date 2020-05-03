@@ -1,0 +1,13 @@
+.em {
+  font-style: italic;
+}
+
+.em-curious {
+  color: var(--curious)
+}
+.em-enthusiastic {
+  color: var(--enthusiastic)
+}
+.em-openminded {
+  color: var(--openminded)
+}

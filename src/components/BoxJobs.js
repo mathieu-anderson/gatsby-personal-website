@@ -14,6 +14,7 @@ import {
 } from "../components/Icons"
 import Job from "../components/Job"
 import { MoodContext } from "../hooks/useMoodContext"
+import Emphasis from "./Emphasis"
 
 const moods = {
   enthusiastic: {
@@ -69,22 +70,23 @@ const BoxJobs = () => {
         <ul>
           <li>
             <em>Who?</em> A dynamic growth SAAS startup selling a holistic
-            promotion engine solution.
+            <Emphasis> promotion engine</Emphasis> solution.
           </li>
           <li>
             <em>What?</em> Talon.One is a twofold product: a webapp to create
-            flexible rule-based marketing campaigns, and a powerful API to
-            evaluate customer sessions according to those rules.
+            flexible <Emphasis>rule-based marketing campaigns</Emphasis>, and a
+            powerful API to evaluate customer sessions according to those rules.
           </li>
           <li>
-            <em>My role:</em> Building and owning front-end features for our web
-            app, in close collaboration with front-end teammates, the UX/UI team
-            and the back-end team (geolocation, rule builder, UI redesign).
-            Optimizing build tools and DX (cut Webpack build time in half,
-            getting adhesion for code standards). Addressing tech debt and
-            managing dependencies (refactoring class-based components hard to
-            extend for our needs to function components, updating critical
-            packages).
+            <em>My role:</em> Building and
+            <Emphasis> owning front-end features</Emphasis> for our web app, in
+            close collaboration with front-end teammates, the UX/UI team and the
+            back-end team (geolocation, rule builder, UI redesign).{" "}
+            <Emphasis>Optimizing build tools</Emphasis> and DX (cut Webpack
+            build time in half, getting adhesion for code standards). Led a
+            major <Emphasis>tech debt effort </Emphasis>
+            (refactoring class-based components hard to extend for our needs to
+            function components, updating critical packages).
           </li>
         </ul>
       </Job>
@@ -111,24 +113,27 @@ const BoxJobs = () => {
       >
         <ul>
           <li>
-            <em>Who?</em> A mature startup providing an SEO service to thousands
-            of users daily as a freemium model.
+            <em>Who?</em> A mature startup providing an{" "}
+            <Emphasis>SEO service</Emphasis> to thousands of users daily as a
+            freemium model.
           </li>
           <li>
-            <em>What?</em> WooRank offers a limited free review for any url
-            entered by the user. Subscribing to the service opens access to a
-            keyword tool, PDF generation, competitor tracking, analytics and
-            more. Deeply committed to high availability and continuous
+            <em>What?</em> WooRank offers a limited{" "}
+            <Emphasis>free review</Emphasis> for any url entered by the user.
+            Subscribing to the service opens access to a keyword tool, PDF
+            generation, competitor tracking, analytics and more. Deeply
+            committed to <Emphasis>high availability</Emphasis> and continuous
             integration / deployment through containerized micro-services (Node
             / React), and multiple daily deploys.
           </li>
           <li>
-            <em>My role:</em> Built new features from back-end to front-end (PDF
-            generation, Facebook API metrics gathering, mailing service).
-            Proposed and gathered adhesion for technical solutions to our user's
-            issues (implemented theming for PDFs). Addressed maintenance issues
-            (legacy PHP codebase). Participated in first-response effort during
-            crisis.
+            <em>My role:</em> Built new features{" "}
+            <Emphasis>from back-end to front-end</Emphasis> (PDF generation,
+            Facebook API metrics gathering, mailing service). Proposed and
+            <Emphasis> gathered adhesion</Emphasis> for technical solutions to
+            our user's issues (implemented theming for PDFs). Addressed
+            maintenance issues (legacy PHP codebase). Participated in{" "}
+            <Emphasis>first-response</Emphasis> effort during crisis.
           </li>
         </ul>
       </Job>

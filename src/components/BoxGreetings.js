@@ -1,6 +1,7 @@
 import React from "react"
 import Box from "./Box"
 import { MoodContext } from "../hooks/useMoodContext"
+import Emphasis from "./Emphasis"
 
 const moods = {
   enthusiastic: {
@@ -33,19 +34,20 @@ const BoxGreetings = () => {
     >
       <div className="greetings-container">
         <p>
-          I'm a <b>front-end</b> specialist. Love being part of cross-functional
-          teams and being the <b>logical glue</b> between the back-end devs and
-          the designers.
+          I'm a <Emphasis>front-end</Emphasis> specialist. Love being part of
+          cross-functional teams and being the <Emphasis>logical glue</Emphasis>{" "}
+          between the back-end devs and the designers.
         </p>
         <p>
-          My favourite tool is currently <b>React</b>, but I love anything that
-          lets me to build UIs in a <b>declarative way</b>. And always eager to
-          adopt whatever is consensual in the team!
+          My favourite tool is currently <Emphasis>React</Emphasis>, but I love
+          anything that lets me to build UIs in a{" "}
+          <Emphasis>declarative way</Emphasis>. And always eager to adopt
+          whatever is consensual in the team!
         </p>
         <p>
-          I come from a <b>fullstack background</b>. Familiar with back-end tech
-          (Node, Go, SQL databases), and delighted to dive into it when it is
-          required!
+          I come from a <Emphasis>fullstack background</Emphasis>. Familiar with
+          back-end tech (Node, Go, SQL databases), and delighted to dive into it
+          when it is required!
         </p>
       </div>
     </Box>
