@@ -38,20 +38,20 @@ function SEO({ description, lang, meta, title }) {
     name: title,
     author: {
       "@type": "Person",
-      name: site.siteMetadata.author,
+      name: "Mathieu Anderson",
     },
     copyrightHolder: {
       "@type": "Person",
-      name: site.siteMetadata.author,
+      name: "Mathieu Anderson",
     },
     copyrightYear: "2020",
     creator: {
       "@type": "Person",
-      name: site.siteMetadata.author,
+      name: "Mathieu Anderson",
     },
     publisher: {
       "@type": "Person",
-      name: site.siteMetadata.author,
+      name: "Mathieu Anderson",
     },
   }
 
@@ -73,7 +73,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `src/images/favicon.png`,
+          content: `https://avatars0.githubusercontent.com/u/20607294?s=460&u=5e66d761be9d9963671a35d04f54c0f287823e69&v=4`,
         },
         {
           property: `og:title`,
