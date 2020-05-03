@@ -68,20 +68,23 @@ const BoxJobs = () => {
       >
         <ul>
           <li>
-            <em>Who?</em> A dynamic growth startup selling a b2b promotion
-            engine solution
+            <em>Who?</em> A dynamic growth SAAS startup selling a holistic
+            promotion engine solution.
           </li>
           <li>
-            <em>What?</em> A twofold product: a webapp to create flexible
-            rule-based marketing campaigns, and a powerful API to evaluate
-            customer sessions according to those rules.
+            <em>What?</em> Talon.One is a twofold product: a webapp to create
+            flexible rule-based marketing campaigns, and a powerful API to
+            evaluate customer sessions according to those rules.
           </li>
           <li>
-            <em>My role:</em> Building and maintaining front-end features in
-            collaboration with the UX/UI team and the back-end team
-            (geolocation, rule builder, UI redesign), optimizing build tools and
-            DX (cut build time in half), addressing tech debt and managing
-            dependencies.
+            <em>My role:</em> Building and owning front-end features for our web
+            app, in close collaboration with front-end teammates, the UX/UI team
+            and the back-end team (geolocation, rule builder, UI redesign).
+            Optimizing build tools and DX (cut Webpack build time in half,
+            getting adhesion for code standards). Addressing tech debt and
+            managing dependencies (refactoring class-based components hard to
+            extend for our needs to function components, updating critical
+            packages).
           </li>
         </ul>
       </Job>
@@ -112,17 +115,20 @@ const BoxJobs = () => {
             of users daily as a freemium model.
           </li>
           <li>
-            <em>What?</em> Offer a limited free review for any url entered by
-            the user. Subscriptions open access to a keyword tool, PDF
-            generation, competitor tracking and analytics. Deeply committed to
-            high availability and continuous integration / deployment through
-            containerized micro-services, with multiple deployment daily
+            <em>What?</em> WooRank offers a limited free review for any url
+            entered by the user. Subscribing to the service opens access to a
+            keyword tool, PDF generation, competitor tracking, analytics and
+            more. Deeply committed to high availability and continuous
+            integration / deployment through containerized micro-services (Node
+            / React), and multiple daily deploys.
           </li>
           <li>
             <em>My role:</em> Built new features from back-end to front-end (PDF
-            generation, Facebook API metrics gathering, mailing service),
-            addressed maintenance issues (legacy PHP codebase), participated in
-            first-response effort during crisis
+            generation, Facebook API metrics gathering, mailing service).
+            Proposed and gathered adhesion for technical solutions to our user's
+            issues (implemented theming for PDFs). Addressed maintenance issues
+            (legacy PHP codebase). Participated in first-response effort during
+            crisis.
           </li>
         </ul>
       </Job>
