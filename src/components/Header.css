@@ -6,8 +6,13 @@ button {
   padding: 0;
 }
 
-.header-title {
+.header-link {
+  text-decoration: none;
   width: fit-content;
+  display: inline-block;
+}
+.header-link:hover {
+  color: inherit;
 }
 
 .header-buttons {

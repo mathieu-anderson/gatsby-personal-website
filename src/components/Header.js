@@ -31,13 +31,15 @@ const Header = () => {
   return (
     <>
       <header>
-        <h1 className="header-title">
-          <MoodContainer
-            initialMood={initialMood}
-            moods={moods}
-            currentMood={mood}
-          />
-        </h1>
+        <a href="https://matand.dev/" className="header-link">
+          <h1 className="header-title">
+            <MoodContainer
+              initialMood={initialMood}
+              moods={moods}
+              currentMood={mood}
+            />
+          </h1>
+        </a>
       </header>
       <nav className="header-buttons">
         <div className="header-social">
