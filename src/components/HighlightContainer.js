@@ -6,7 +6,7 @@ const HighlightContainer = ({ children }) => {
   const { mood } = React.useContext(MoodContext)
 
   return (
-    <section class={`highlight-container highlight-${mood}`}>
+    <section className={`highlight-container highlight-${mood}`}>
       {children}
     </section>
   )

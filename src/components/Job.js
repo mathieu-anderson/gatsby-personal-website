@@ -8,11 +8,11 @@ const Job = ({ job, techList, children }) => {
   return (
     <HighlightContainer>
       <h3>{job.link}</h3>
-      <p class="job-dates">{job.dates}</p>
-      <p class="job-role">{job.role}</p>
-      <div class="job-tech">
+      <p className="job-dates">{job.dates}</p>
+      <p className="job-role">{job.role}</p>
+      <div className="job-tech">
         {techList.map(({ icon, name }) => (
-          <MiniPill icon={icon} name={name} />
+          <MiniPill key={`${icon}-${name}`} icon={icon} name={name} />
         ))}
       </div>
       <div className="job-description">{children}</div>
