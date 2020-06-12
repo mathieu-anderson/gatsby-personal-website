@@ -212,13 +212,20 @@ const handleThemeSwitch = (currentTheme, setTheme) => {
   }
 }
 
+const getThemeIcon = currentTheme => {
+  if (currentTheme === undefined) {
+    return <svg viewBox="0 0 18 18" className="theme-icon"></svg>
+  }
+  return currentTheme === "light" ? moon : sun
+}
+
 const Header = () => {
   const { mood, handleSetMood } = React.useContext(MoodContext)
-  const [currentTheme, setTheme] = React.useState(getInitialTheme(new Date()))
+  const [currentTheme, setTheme] = React.useState(undefined)
 
   // Only run on first render to switch layout to appropriate initial theme
   React.useEffect(() => {
-    handleThemeSwitch(currentTheme, setTheme)
+    handleThemeSwitch(getInitialTheme(new Date()), setTheme)
   }, [])
 
   return (
@@ -276,9 +283,10 @@ const Header = () => {
             title={`Switch to ${
               currentTheme === "light" ? "dark" : "light"
             } theme`}
+            className="theme-button"
             onClick={() => handleThemeSwitch(currentTheme, setTheme)}
           >
-            {currentTheme === "light" ? moon : sun}
+            {getThemeIcon(currentTheme)}
           </button>
         </div>
       </nav>

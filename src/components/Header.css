@@ -99,6 +99,10 @@ a:first-of-type {
  animation: flip 0.2s;
 }
 
+.theme-button {
+  animation: fadeIn 1.5s;
+}
+
 @media only screen and (max-width: 610px) {
   .header-title > div {
     font-size: 1.7rem !important;

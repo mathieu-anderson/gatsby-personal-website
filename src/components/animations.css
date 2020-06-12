@@ -40,3 +40,8 @@
   from { transform: rotate(0); }
   to { transform: rotate(360deg); }
 }
+
+@keyframes fadeIn {
+  from { opacity:0; }
+  to { opacity:1; }
+}
