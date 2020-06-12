@@ -19,7 +19,8 @@
 
 .pill-name {
   padding-left: 0.5em;
-  font-size: 1.1rem
+  font-size: 1.1rem;
+  line-height: 1.1;
 }
 
 .pill-details {
