@@ -19,7 +19,7 @@ svg:hover.medium {
 
 svg:hover.github {
   transition: 0.1s all;
-  fill: #1b1f23
+  fill: var(--github-icon)
 }
 
 .social-icon {
