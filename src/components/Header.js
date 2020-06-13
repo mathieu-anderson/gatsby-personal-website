@@ -165,6 +165,10 @@ const moon = (
   </svg>
 )
 
+// Use dark theme as default after 7pm
+// Results in a flash of light theme
+// Should be fixed by implementing a solution close to
+// https://joshwcomeau.com/gatsby/dark-mode/
 const getInitialTheme = dateObject => {
   const hours = dateObject.getHours()
   if (hours > 19) {
@@ -175,7 +179,7 @@ const getInitialTheme = dateObject => {
 }
 
 // Switch the values of core css variables
-// The poor man's dark theme
+// The lazy man's dark theme
 const handleThemeSwitch = (currentTheme, setTheme) => {
   if (currentTheme === "light") {
     document.documentElement.style.setProperty(
@@ -192,6 +196,18 @@ const handleThemeSwitch = (currentTheme, setTheme) => {
     )
     document.documentElement.style.setProperty("--white", "rgba(13, 13, 43)")
     document.documentElement.style.setProperty(
+      "--enthusiastic-smoke",
+      "rgba(225, 119, 1, 0.2)"
+    )
+    document.documentElement.style.setProperty(
+      "--curious-smoke",
+      "rgba(16, 166, 116, 0.2)"
+    )
+    document.documentElement.style.setProperty(
+      "--openminded-smoke",
+      "rgba(98, 65, 199, 0.2)"
+    )
+    document.documentElement.style.setProperty(
       "--github-icon",
       "rgb(247, 247, 247, 0.85)"
     )
@@ -207,6 +223,18 @@ const handleThemeSwitch = (currentTheme, setTheme) => {
       "rgba(0, 0, 0, 0.1)"
     )
     document.documentElement.style.setProperty("--white", "rgb(247, 247, 247)")
+    document.documentElement.style.setProperty(
+      "--enthusiastic-smoke",
+      "rgba(225, 119, 1, 0.1)"
+    )
+    document.documentElement.style.setProperty(
+      "--curious-smoke",
+      "rgba(16, 166, 116, 0.1)"
+    )
+    document.documentElement.style.setProperty(
+      "--openminded-smoke",
+      "rgba(98, 65, 199, 0.1)"
+    )
     document.documentElement.style.setProperty("--github-icon", "#1b1f23")
     setTheme("light")
   }
@@ -277,7 +305,7 @@ const Header = () => {
               "openminded-active"}`}
             onClick={() => handleSetMood("openminded")}
           >
-            Open-minded
+            Open
           </button>
           <button
             title={`Switch to ${

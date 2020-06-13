@@ -42,16 +42,15 @@ a:first-of-type {
   flex-flow: row nowrap;
 }
 
-.header-mood > button {
+.header-mood > .default-mood,
+.curious-mood,
+.openminded-mood,
+.enthusiastic-mood {
   margin-left: 1rem;
 }
 
 .header-mood > button:hover {
   cursor: pointer;
-}
-
-.header-mood > button:last-of-type {
-  margin-right: 1rem;
 }
 
 .default-mood:hover {
@@ -91,7 +90,7 @@ a:first-of-type {
 .theme-icon {
   height: 1.2rem;
   position: relative;
-  top: 7%;
+  top: 12%;
   fill: var(--black);
 }
 
@@ -100,6 +99,9 @@ a:first-of-type {
 }
 
 .theme-button {
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0 1rem 0 2.5rem;
   animation: fadeIn 1.5s;
 }
 
@@ -120,8 +122,5 @@ a:first-of-type {
   }
   .header-mood > button:first-of-type {
     margin-left: 0;
-  }
-  .theme-icon {
-    top: 11%;
   }
 }
