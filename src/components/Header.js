@@ -188,13 +188,13 @@ const handleThemeSwitch = (currentTheme, setTheme) => {
     )
     document.documentElement.style.setProperty(
       "--black-light",
-      "rgb(247, 247, 247, 0.7)"
+      "rgb(247, 247, 247, 0.5)"
     )
     document.documentElement.style.setProperty(
       "--black-smoke",
-      "rgb(247, 247, 247, 0.4)"
+      "rgb(247, 247, 247, 0.2)"
     )
-    document.documentElement.style.setProperty("--white", "rgba(13, 13, 43)")
+    document.documentElement.style.setProperty("--white", "rgba(26, 33, 45)")
     document.documentElement.style.setProperty(
       "--enthusiastic-smoke",
       "rgba(225, 119, 1, 0.2)"
