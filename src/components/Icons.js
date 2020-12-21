@@ -4,15 +4,16 @@ import "./Icons.css"
 export const GithubIcon = ({ link }) => {
   return (
     <a className="social-link" title="GitHub" href={link}>
-      <svg
-        className="social-icon icon-wiggle github"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>GitHub icon</title>
-        <path
-          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205
+      <div className="github">
+        <svg
+          className="social-icon github"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>GitHub icon</title>
+          <path
+            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205
         11.385.6.113.82-.258.82-.577
         0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07
         3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838
@@ -24,8 +25,9 @@ export const GithubIcon = ({ link }) => {
         3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015
         2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24
         12.297c0-6.627-5.373-12-12-12"
-        />
-      </svg>
+          />
+        </svg>
+      </div>
     </a>
   )
 }
@@ -37,22 +39,24 @@ export const MediumIcon = () => {
       title="Medium"
       href="https://medium.com/@syllaband"
     >
-      <svg
-        className="social-icon icon-wiggle medium"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>Medium icon</title>
-        <path
-          d="M0 0v24h24V0H0zm19.938 5.686L18.651 6.92a.376.376 0 0
+      <div className="medium">
+        <svg
+          className="social-icon medium"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Medium icon</title>
+          <path
+            d="M0 0v24h24V0H0zm19.938 5.686L18.651 6.92a.376.376 0 0
         0-.143.362v9.067a.376.376 0 0 0 .143.361l1.257
         1.234v.271h-6.322v-.27l1.302-1.265c.128-.128.128-.165.128-.36V8.99l-3.62
         9.195h-.49L6.69 8.99v6.163a.85.85 0 0 0 .233.707l1.694
         2.054v.271H3.815v-.27L5.51 15.86a.82.82 0 0 0 .218-.707V8.027a.624.624 0
         0 0-.203-.527L4.019 5.686v-.27h4.674l3.613 7.923 3.176-7.924h4.456v.271z"
-        />
-      </svg>
+          />
+        </svg>
+      </div>
     </a>
   )
 }
@@ -64,15 +68,16 @@ export const TwitterIcon = () => {
       title="Twitter"
       href="https://twitter.com/syllaband"
     >
-      <svg
-        className="social-icon icon-wiggle twitter"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>Twitter icon</title>
-        <path
-          d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574
+      <div className="twitter">
+        <svg
+          className="social-icon twitter"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Twitter icon</title>
+          <path
+            d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574
         2.163-2.723-.951.555-2.005.959-3.127
         1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0
         .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666
@@ -83,8 +88,9 @@ export const TwitterIcon = () => {
         0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0
         13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56
         2.46-2.548l-.047-.02z"
-        />
-      </svg>
+          />
+        </svg>
+      </div>
     </a>
   )
 }
@@ -96,15 +102,16 @@ export const LinkedinIcon = () => {
       title="LinkedIn"
       href="https://www.linkedin.com/in/mathieuanderson/"
     >
-      <svg
-        className="social-icon icon-wiggle linkedin"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>LinkedIn icon</title>
-        <path
-          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853
+      <div className="linkedin">
+        <svg
+          className="social-icon linkedin"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>LinkedIn icon</title>
+          <path
+            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853
         0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9
         1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337
         7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14
@@ -112,8 +119,9 @@ export const LinkedinIcon = () => {
         13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0
         1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24
         22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-        />
-      </svg>
+          />
+        </svg>
+      </div>
     </a>
   )
 }

@@ -5,8 +5,8 @@ const MoodContainer = ({ moods, initialMood, currentMood }) => {
   const activeMood = moods[currentMood] || initialMood
 
   return (
-    <div className={`mood-container ${activeMood.moodClassName}`}>
-      {activeMood.moodText}
+    <div className="mood-container">
+      <div className={activeMood.moodClassName}>{activeMood.moodText}</div>
     </div>
   )
 }

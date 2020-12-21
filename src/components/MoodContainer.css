@@ -1,6 +1,7 @@
 
 .mood-container {
-  transition: 0.1s ease-in-out
+  transition: 0.1s ease-in-out;
+  transition: animation;
 }
 
 .enthusiastic{
@@ -8,22 +9,37 @@
   animation: rumble 0.1s linear;
   animation-iteration-count: 5;
 }
-.enthusiastic:hover {
+.box-heading:hover .enthusiastic {
   animation: rumble 0.1s infinite linear;
+  will-change: animation;
+}
+.header-title:hover .enthusiastic {
+  animation: rumble 0.1s infinite linear;
+  will-change: animation;
 }
 
 .openminded {
   color: #6241C7;
   animation: lift 0.7s;
 }
-.openminded:hover {
-  animation: lift infinite 0.7s;
+.box-heading:hover .openminded {
+  animation: lift infinite 0.7s ease-in-out;
+  will-change: animation;
+}
+.header-title:hover .openminded {
+  animation: lift infinite 0.7s ease-in-out;
+  will-change: animation;
 }
 
 .curious {
   color: #10A674;
   animation: floaty 1.3s linear;
 }
-.curious:hover {
+.box-heading:hover .curious {
   animation: floaty 1.3s infinite linear;
+  will-change: animation;
+}
+.header-title:hover .curious {
+  animation: floaty 1.3s infinite linear;
+  will-change: animation;
 }

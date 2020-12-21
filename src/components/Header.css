@@ -92,17 +92,19 @@ a:first-of-type {
   position: relative;
   top: 12%;
   fill: var(--black);
+  transform: rotate(40deg)
 }
 
-.theme-icon:hover {
- animation: flip 0.2s;
+.theme-button:hover .theme-icon {
+  animation: flip 0.2s;
+  will-change: animation;
 }
 
 .theme-button {
   margin-right: 0;
   margin-left: 0;
   padding: 0 1rem 0 2.5rem;
-  animation: fadeIn 1.5s;
+  transition: animation;
 }
 
 @media only screen and (max-width: 610px) {

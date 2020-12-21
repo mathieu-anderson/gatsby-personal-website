@@ -1,25 +1,35 @@
 svg.social-icon {
-  fill: var(--black)
+  fill: var(--black);
+  animation: miniLift 0.1s;
+  will-change: animation;
 }
 
-svg:hover.linkedin {
+.social-link:hover .linkedin {
   transition: 0.1s all;
-  fill: #2867b2
+  fill: #2867b2;
+  animation: miniLift 0.1s;
+  will-change: animation;
 }
 
-svg:hover.twitter {
+.social-link:hover .twitter {
   transition: 0.1s all;
-  fill: #00acee
+  fill: #00acee;
+  animation: miniLift 0.1s;
+  will-change: animation;
 }
 
-svg:hover.medium {
+.social-link:hover .medium {
   transition: 0.1s all;
-  fill: #00AB6B
+  fill: #00AB6B;
+  animation: miniLift 0.1s;
+  will-change: animation;
 }
 
-svg:hover.github {
+.social-link:hover .github {
   transition: 0.1s all;
-  fill: var(--github-icon)
+  fill: var(--github-icon);
+  animation: miniLift 0.1s;
+  will-change: animation;
 }
 
 .social-icon {
@@ -28,9 +38,7 @@ svg:hover.github {
 /* This is needed to be able to animate the links */
 .social-link {
   display: inline-block;
-}
-.social-link:hover {
-  animation: miniLift 0.1s;
+  transition: animation;
 }
 
 .tech-icon {
