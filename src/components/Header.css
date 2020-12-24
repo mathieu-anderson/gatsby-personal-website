@@ -37,11 +37,10 @@ a:first-of-type {
   margin-left: 0;
 }
 
-.header-mood-and-theme {
+.header-mood-and-theme  {
   display: flex;
   flex-flow: row nowrap;
   align-self: flex-start;
-  padding-bottom: 0.2rem;
   justify-content: space-between;
 }
 
@@ -52,6 +51,11 @@ a:first-of-type {
   margin-left: 1rem;
 }
 
+
+.header-mood-and-theme > .mood-buttons > button {
+  cursor: pointer;
+  padding-bottom: 0.2rem;
+}
 
 .header-mood-and-theme > .mood-buttons > button:hover {
   cursor: pointer;
