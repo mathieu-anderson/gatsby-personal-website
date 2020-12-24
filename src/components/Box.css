@@ -1,7 +1,7 @@
 .box-container {
   padding: 0 1.2rem .9rem 1.2rem;
   border: 2px solid var(--black-light);
-  box-shadow: 10px 10px 0 var(--black-light);
+  box-shadow: 9px 10px 0 var(--black-light);
   margin-right: 10px;
   margin-bottom: 2em;
   height: min-content;
@@ -19,15 +19,15 @@
 
 .box-enthusiastic{
   border: 2px solid var(--enthusiastic-light);
-  box-shadow: 10px 10px 0 var(--enthusiastic-light);
+  box-shadow: 9px 10px 0 var(--enthusiastic-light);
 }
 .box-curious{
   border: 2px solid var(--curious-light);
-  box-shadow: 10px 10px 0 var(--curious-light);
+  box-shadow: 9px 10px 0 var(--curious-light);
 }
 .box-openminded{
   border: 2px solid var(--openminded-light);
-  box-shadow: 10px 10px 0 var(--openminded-light);
+  box-shadow: 9px 10px 0 var(--openminded-light);
 }
 .box-enthusiastic .box-heading {
   border-bottom: 2px solid var(--enthusiastic-light);
