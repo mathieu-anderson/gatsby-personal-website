@@ -31,7 +31,7 @@ const sun = (
     viewBox="0 0 47.5 47.5"
     version="1.1"
     id="svg2"
-    className="theme-icon"
+    className="theme-icon sun"
   >
     <defs id="defs6">
       <clipPath id="clipPath16" clipPathUnits="userSpaceOnUse">
@@ -102,62 +102,15 @@ const sun = (
 )
 
 const moon = (
-  <svg viewBox="0 0 18 18" className="theme-icon">
-    <mask id="moon-mask">
-      <rect x="0" y="0" width="18" height="18" fill="#FFF"></rect>
-      <circle cx="10" cy="2" r="8" fill="black"></circle>
-    </mask>
-    <circle
-      cx="9"
-      cy="9"
-      fill="var(--black)"
-      mask="url(#moon-mask)"
-      r="8"
-    ></circle>
-    <g>
-      <circle
-        cx="17"
-        cy="9"
-        r="1.5"
-        fill="var(--color-text)"
-        style={{ transformOrigin: "center center 0px", transform: "scale(0)" }}
-      ></circle>
-      <circle
-        cx="13"
-        cy="15.928203230275509"
-        r="1.5"
-        fill="var(--color-text)"
-        style={{ transformOrigin: "center center 0px", transform: "scale(0)" }}
-      ></circle>
-      <circle
-        cx="5.000000000000002"
-        cy="15.92820323027551"
-        r="1.5"
-        fill="var(--color-text)"
-        style={{ transformOrigin: "center center 0px", transform: "scale(0)" }}
-      ></circle>
-      <circle
-        cx="1"
-        cy="9.000000000000002"
-        r="1.5"
-        fill="var(--color-text)"
-        style={{ transformOrigin: "center center 0px", transform: "scale(0)" }}
-      ></circle>
-      <circle
-        cx="4.9999999999999964"
-        cy="2.071796769724493"
-        r="1.5"
-        fill="var(--color-text)"
-        style={{ transformOrigin: "center center 0px", transform: "scale(0)" }}
-      ></circle>
-      <circle
-        cx="13"
-        cy="2.0717967697244912"
-        r="1.5"
-        fill="var(--color-text)"
-        style={{ transformOrigin: "center center 0px", transform: "scale(0)" }}
-      ></circle>
-    </g>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    x="0px"
+    y="0px"
+    viewBox="0 0 100 125"
+    className="theme-icon moon"
+  >
+    <path d="M95,50c0,24.7-20.2,44.8-45,44.8c-23.7,0-43.4-18.4-45-41.9c-0.1-1.2,0.6-2.4,1.8-2.9c1.1-0.5,2.5-0.3,3.4,0.6  c5.9,5.9,13.1,9.1,20.3,9.1c16,0,28.9-13,28.9-28.9c0-7.3-3.2-14.5-9.1-20.4c-0.9-0.9-1.1-2.2-0.6-3.3c0.5-1.1,1.7-1.8,2.9-1.8  C76.4,6.6,95,26.3,95,50z" />
   </svg>
 )
 
@@ -272,37 +225,40 @@ const Header = () => {
           <TwitterIcon />
           <LinkedinIcon />
         </div>
-        <div className="header-mood">
-          <button
-            title="Default mood"
-            className={`default-mood ${mood === null && "default-active"}`}
-            onClick={() => handleSetMood("default")}
-          >
-            Default
-          </button>
-          <button
-            title="Enthusiastic mood"
-            className={`enthusiastic-mood ${mood === "enthusiastic" &&
-              "enthusiastic-active"}`}
-            onClick={() => handleSetMood("enthusiastic")}
-          >
-            Enthusiastic
-          </button>
-          <button
-            title="Curious mood"
-            className={`curious-mood ${mood === "curious" && "curious-active"}`}
-            onClick={() => handleSetMood("curious")}
-          >
-            Curious
-          </button>
-          <button
-            title="Openminded mood"
-            className={`openminded-mood ${mood === "openminded" &&
-              "openminded-active"}`}
-            onClick={() => handleSetMood("openminded")}
-          >
-            Open
-          </button>
+        <div className="header-mood-and-theme">
+          <div className="mood-buttons">
+            <button
+              title="Default mood"
+              className={`default-mood ${mood === null && "default-active"}`}
+              onClick={() => handleSetMood("default")}
+            >
+              Default
+            </button>
+            <button
+              title="Enthusiastic mood"
+              className={`enthusiastic-mood ${mood === "enthusiastic" &&
+                "enthusiastic-active"}`}
+              onClick={() => handleSetMood("enthusiastic")}
+            >
+              Enthusiastic
+            </button>
+            <button
+              title="Curious mood"
+              className={`curious-mood ${mood === "curious" &&
+                "curious-active"}`}
+              onClick={() => handleSetMood("curious")}
+            >
+              Curious
+            </button>
+            <button
+              title="Openminded mood"
+              className={`openminded-mood ${mood === "openminded" &&
+                "openminded-active"}`}
+              onClick={() => handleSetMood("openminded")}
+            >
+              Open
+            </button>
+          </div>
           <button
             title={`Switch to ${
               currentTheme === "light" ? "dark" : "light"

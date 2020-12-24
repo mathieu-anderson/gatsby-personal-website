@@ -76,6 +76,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-display: fallback;
+  height: 100%;
 }
 
 body {
@@ -83,7 +84,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--white);
+  min-height: 100%;
 }
+
 article,
 aside,
 details,
@@ -712,7 +715,10 @@ pre tt:after {
     font-size: 1.1rem;
   }
   .box-heading div {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+  }
+  .header-title div {
+    font-size: 1.7rem;
   }
   h4 {
     font-size: 1.2rem;

@@ -37,19 +37,23 @@ a:first-of-type {
   margin-left: 0;
 }
 
-.header-mood {
+.header-mood-and-theme {
   display: flex;
   flex-flow: row nowrap;
+  align-self: flex-start;
+  padding-bottom: 0.2rem;
+  justify-content: space-between;
 }
 
-.header-mood > .default-mood,
+.header-mood-and-theme > .default-mood,
 .curious-mood,
 .openminded-mood,
 .enthusiastic-mood {
   margin-left: 1rem;
 }
 
-.header-mood > button:hover {
+
+.header-mood-and-theme > .mood-buttons > button:hover {
   cursor: pointer;
 }
 
@@ -87,42 +91,51 @@ a:first-of-type {
   box-shadow: inset 0 -2px 0 var(--enthusiastic) !important;
 }
 
+.theme-button {
+  margin: 0 0.5rem 0 3rem;
+  transition: animation;
+}
+.theme-button:hover .theme-icon {
+  animation: flip 0.25s ease-in-out;
+  will-change: animation;
+}
 .theme-icon {
   height: 1.2rem;
   position: relative;
-  top: 12%;
   fill: var(--black);
-  transform: rotate(40deg)
+  top: 11%;
+  cursor: pointer;
+}
+.theme-icon.moon {
+  height: 1.5rem;
 }
 
-.theme-button:hover .theme-icon {
-  animation: flip 0.2s;
-  will-change: animation;
-}
-
-.theme-button {
-  margin-right: 0;
-  margin-left: 0;
-  padding: 0 1rem 0 2.5rem;
-  transition: animation;
-}
-
-@media only screen and (max-width: 610px) {
-  .header-title > div {
-    font-size: 1.7rem !important;
-  }
+@media only screen and (max-width: 580px) {
   .header-buttons {
     padding-top: 0.6rem;
     flex-flow: column nowrap;
   }
-  .header-mood {
+  .header-mood-and-theme {
     font-size: 0.9rem;
     padding-bottom: 0.1rem;
+    display: flex;
+    width: 100%;
   }
-  .header-mood > button:last-of-type {
-    margin-right: 0;
+  .mood-buttons {
+    font-size: 0.9rem;
   }
-  .header-mood > button:first-of-type {
-    margin-left: 0;
+  .theme-button {
+    margin: 0 0 0 0.5rem;
+  }
+  .theme-icon.sun {
+    margin: 0;
+    height: 1rem;
+        top: -100%;
+
+  }
+  .theme-icon.moon {
+    margin: 0;
+    height: 1.3rem;
+    top: -90%;
   }
 }
