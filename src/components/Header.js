@@ -22,7 +22,7 @@ const moods = {
 
 const initialMood = {
   moodClassName: "",
-  moodText: "Mathieu Anderson is a web dev",
+  moodText: "Mathieu Anderson - Front-end Developer",
 }
 
 const sun = (
@@ -225,49 +225,8 @@ const Header = () => {
           <TwitterIcon />
           <LinkedinIcon />
         </div>
-        <div className="header-mood-and-theme">
-          <div className="mood-buttons">
-            <button
-              title="Default mood"
-              className={`default-mood ${mood === null && "default-active"}`}
-              onClick={() => handleSetMood("default")}
-            >
-              Default
-            </button>
-            <button
-              title="Enthusiastic mood"
-              className={`enthusiastic-mood ${mood === "enthusiastic" &&
-                "enthusiastic-active"}`}
-              onClick={() => handleSetMood("enthusiastic")}
-            >
-              Enthusiastic
-            </button>
-            <button
-              title="Curious mood"
-              className={`curious-mood ${mood === "curious" &&
-                "curious-active"}`}
-              onClick={() => handleSetMood("curious")}
-            >
-              Curious
-            </button>
-            <button
-              title="Openminded mood"
-              className={`openminded-mood ${mood === "openminded" &&
-                "openminded-active"}`}
-              onClick={() => handleSetMood("openminded")}
-            >
-              Open
-            </button>
-          </div>
-          <button
-            title={`Switch to ${
-              currentTheme === "light" ? "dark" : "light"
-            } theme`}
-            className="theme-button"
-            onClick={() => handleThemeSwitch(currentTheme, setTheme)}
-          >
-            {getThemeIcon(currentTheme)}
-          </button>
+        <div>
+          mathieu.hj.anderson@gmail.com<div>+336 85 01 45 25</div>
         </div>
       </nav>
     </>

@@ -1,13 +1,13 @@
 .highlight-container {
   display: flex;
   flex-flow: column nowrap;
-  padding: 1rem;
+  /* padding: 1rem; */
   height: min-content;
-  margin-bottom: 2rem;
-  transition: box-shadow 0.1s ease-in-out;
-  box-shadow: 9px 10px 0 var(--black-smoke);
-  border:  2px solid  var(--black-smoke);
-  margin-right: 10px;
+  /* padding-bottom: 2rem; */
+}
+
+.highlight-container > div > div {
+  margin-bottom: 1rem;
 }
 
 .highlight-container:last-of-type {

@@ -67,28 +67,25 @@ const BoxJobs = () => {
           { name: "Docker", icon: <DockerIcon /> },
         ]}
       >
-        <ul>
-          <li>
-            <em>Who?</em> A dynamic growth SAAS startup selling a holistic
-            <Emphasis> promotion engine</Emphasis> solution.
-          </li>
-          <li>
-            <em>What?</em> Talon.One is a twofold product: a webapp to create
-            flexible <Emphasis>rule-based marketing campaigns</Emphasis>, and a
-            powerful API to evaluate customer sessions according to those rules.
-          </li>
-          <li>
-            <em>My role:</em> Building and
-            <Emphasis> owning front-end features</Emphasis> for our web app, in
-            close collaboration with front-end teammates, the UX/UI team and the
-            back-end team (geolocation, rule builder, UI redesign).{" "}
-            <Emphasis>Optimizing build tools</Emphasis> and DX (cut Webpack
-            build time in half, getting adhesion for code standards). Led a
-            major <Emphasis>tech debt effort </Emphasis>
-            (refactoring class-based components hard to extend for our needs to
-            function components, updating critical packages).
-          </li>
-        </ul>
+        <div>
+          <em>Who?</em> A dynamic growth SAAS startup selling a holistic
+          <Emphasis> promotion engine</Emphasis> solution.
+        </div>
+        <div>
+          <em>What?</em> A twofold product: a webapp to create flexible{" "}
+          <Emphasis>rule-based marketing campaigns</Emphasis>, and a powerful
+          API to evaluate customer sessions according to those rules.
+        </div>
+        <div>
+          <em>My role:</em> Building and
+          <Emphasis> owning front-end features</Emphasis> for our web app, in
+          close collaboration with front-end teammates, the UX/UI team and the
+          back-end team (geolocation, rule builder, UI redesign).{" "}
+          <Emphasis>Optimizing build tools</Emphasis> and DX (cut Webpack build
+          time and bundle size in half, getting adhesion for code standards).
+          Led a major <Emphasis>tech debt effort </Emphasis>
+          (refactoring 5 years old React code, updating critical packages).
+        </div>
       </Job>
       <Job
         job={{
@@ -111,31 +108,26 @@ const BoxJobs = () => {
           { name: "Docker", icon: <DockerIcon /> },
         ]}
       >
-        <ul>
-          <li>
-            <em>Who?</em> A mature startup providing an{" "}
-            <Emphasis>SEO service</Emphasis> to thousands of users daily as a
-            freemium model.
-          </li>
-          <li>
-            <em>What?</em> WooRank offers a limited{" "}
-            <Emphasis>free review</Emphasis> for any url entered by the user.
-            Subscribing to the service opens access to a keyword tool, PDF
-            generation, competitor tracking, analytics and more. Deeply
-            committed to <Emphasis>high availability</Emphasis> and continuous
-            integration / deployment through containerized micro-services (Node
-            / React), and multiple daily deploys.
-          </li>
-          <li>
-            <em>My role:</em> Built new features{" "}
-            <Emphasis>from back-end to front-end</Emphasis> (PDF generation,
-            Facebook API metrics gathering, mailing service). Proposed and
-            <Emphasis> gathered adhesion</Emphasis> for technical solutions to
-            our user's issues (implemented theming for PDFs). Addressed
-            maintenance issues (legacy PHP codebase). Participated in{" "}
-            <Emphasis>first-response</Emphasis> effort during crisis.
-          </li>
-        </ul>
+        <div>
+          <em>Who?</em> A mature startup providing an{" "}
+          <Emphasis>SEO service</Emphasis> to thousands of users daily as a
+          freemium model. Committed to <Emphasis>high availability</Emphasis>{" "}
+          and continuous deployment through containerized micro-services (Node /
+          React), and multiple daily deploys.
+        </div>
+        <div>
+          <em>What?</em> WooRank offers an <Emphasis>SEO review</Emphasis>{" "}
+          service for any url entered by the user. Features: basic SEO checks,
+          keyword tool, PDF generation, competitor tracking, analytics.
+        </div>
+        <div>
+          <em>My role:</em> Built new features{" "}
+          <Emphasis>from back-end to front-end</Emphasis> (Node and React) (PDF
+          generation, Facebook API metrics, mailing service). Proposed and{" "}
+          <Emphasis>gathered adhesion</Emphasis> for technical solutions to our
+          user's issues (implemented styles theming for PDFs). Participated in{" "}
+          <Emphasis>first-response</Emphasis> effort during crisis.
+        </div>
       </Job>
     </Box>
   )

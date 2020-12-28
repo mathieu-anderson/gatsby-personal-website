@@ -47,16 +47,6 @@ const BoxTech = () => {
     >
       <div className="pills-container">
         <Pill
-          name="JavaScript"
-          icon={<JavaScriptIcon />}
-          details={{
-            since: "2016",
-            frequency: "every day",
-            like:
-              "the flexibility to be used in the front-end and the back-end, the speed and ease of development",
-          }}
-        />
-        <Pill
           name="TypeScript"
           icon={<TypeScriptIcon />}
           details={{
@@ -73,9 +63,30 @@ const BoxTech = () => {
             since: "2016",
             frequency: "every day",
             like:
-              "the composability paradigm and the continued improvements and innovation brought to the API (hooks <3)",
+              "the composability paradigm and the continued improvements and innovation brought to the library's API (hooks, Suspense, etc.)",
           }}
         />
+        <Pill
+          name="Webpack"
+          icon={<WebpackIcon />}
+          details={{
+            since: "2016",
+            frequency: "every day (as bundler of all my projects)",
+            like:
+              "the amount of control it gives over a build and the excellent developer experience it enables",
+          }}
+        />
+        <Pill
+          name="JavaScript"
+          icon={<JavaScriptIcon />}
+          details={{
+            since: "2016",
+            frequency: "every day",
+            like:
+              "the flexibility to be used in the front-end and the back-end, the speed and ease of development",
+          }}
+        />
+
         <Pill
           name="Redux"
           icon={<ReduxIcon />}
@@ -96,16 +107,6 @@ const BoxTech = () => {
           }}
         />
         <Pill
-          name="Sass"
-          icon={<SassIcon />}
-          details={{
-            since: "2016",
-            frequency: "only in side projects",
-            like:
-              "the flexibility to be used in the front-end and the back-end, the speed and ease of development",
-          }}
-        />
-        <Pill
           name="Node"
           icon={<NodeIcon />}
           details={{
@@ -116,16 +117,7 @@ const BoxTech = () => {
               "the NPM package ecosystem and the empowering ability to write JavaScript in the back-end",
           }}
         />
-        <Pill
-          name="Webpack"
-          icon={<WebpackIcon />}
-          details={{
-            since: "2016",
-            frequency: "every day (as bundler of all my projects)",
-            like:
-              "the amount of control it gives over a build and the excellent developer experience it enables",
-          }}
-        />
+
         <Pill
           name="Docker"
           icon={<DockerIcon />}

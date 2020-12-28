@@ -30,9 +30,8 @@
   display: grid;
   grid-column-gap: 1rem;
   grid-auto-rows: min-content;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "layout-subgrid-left layout-subgrid-right";
+  grid-template-columns: 1fr;
+
 }
 
 .layout-subgrid-left {

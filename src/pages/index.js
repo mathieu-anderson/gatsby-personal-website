@@ -13,14 +13,9 @@ const IndexPage = () => {
     <MoodProvider>
       <Layout>
         <SEO title="Mathieu Anderson is a web dev" />
-        <div className="layout-subgrid-left">
-          <BoxGreetings />
-          <BoxJobs />
-        </div>
-        <div className="layout-subgrid-right">
-          <BoxTech />
-          <BoxProjects />
-        </div>
+        <BoxGreetings />
+        <BoxTech />
+        <BoxJobs />
       </Layout>
     </MoodProvider>
   )
