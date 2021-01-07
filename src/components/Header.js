@@ -251,7 +251,7 @@ const Header = () => {
               Curious
             </button>
             <button
-              title="Openminded mood"
+              title="Open-minded mood"
               className={`openminded-mood ${mood === "openminded" &&
                 "openminded-active"}`}
               onClick={() => handleSetMood("openminded")}

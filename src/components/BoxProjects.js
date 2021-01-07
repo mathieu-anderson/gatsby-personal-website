@@ -36,7 +36,7 @@ export const ThemingArticle = (
     project={{
       name: "Theming Ant Design : a detailed step by step basic guide",
       type: "Guide",
-      date: "March 23, 2019",
+      date: "March 23, 2020",
       link:
         "https://medium.com/@syllaband/theming-ant-design-a-detailed-step-by-step-basic-guide-d060bef34ec4",
     }}
