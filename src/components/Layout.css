@@ -77,6 +77,7 @@ html {
   -webkit-text-size-adjust: 100%;
   font-display: fallback;
   height: 100%;
+  overflow-y: scroll;
 }
 
 body {
