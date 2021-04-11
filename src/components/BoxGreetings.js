@@ -35,14 +35,15 @@ const BoxGreetings = () => {
       <div className="greetings-container">
         <p>
           I'm a <Emphasis>front-end</Emphasis> specialist. Love being part of
-          cross-functional teams and being the <Emphasis>logical glue</Emphasis>{" "}
-          between the back-end devs and the designers.
+          cross-functional teams and working with product owners to be the{" "}
+          <Emphasis>logical glue</Emphasis> between the back-end devs and the
+          designers.
         </p>
         <p>
           My favourite tool is currently <Emphasis>React</Emphasis>, but I love
           anything that lets me to build UIs in a{" "}
           <Emphasis>declarative way</Emphasis>. And always eager to adopt
-          whatever is consensual in the team!
+          whatever the team agrees upon!
         </p>
         <p>
           I come from a <Emphasis>fullstack background</Emphasis>. Familiar with

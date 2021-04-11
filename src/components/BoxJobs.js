@@ -78,15 +78,18 @@ const BoxJobs = () => {
             powerful API to evaluate customer sessions according to those rules.
           </li>
           <li>
-            <em>My role:</em> Building and
-            <Emphasis> owning front-end features</Emphasis> for our web app, in
-            close collaboration with front-end teammates, the UX/UI team and the
-            back-end team (geolocation, rule builder, UI redesign).{" "}
-            <Emphasis>Optimizing build tools</Emphasis> and DX (cut Webpack
-            build time in half, getting adhesion for code standards). Led a
-            major <Emphasis>tech debt effort </Emphasis>
-            (refactoring class-based components hard to extend for our needs to
-            function components, updating critical packages).
+            <em>My role:</em>{" "}
+            <Emphasis>Building and owning front-end features</Emphasis> for our
+            web app, in close collaboration with front-end teammates, the UX/UI
+            team and the back-end team (geolocation, rule builder, UI redesign).{" "}
+            <Emphasis>Optimizing build tools</Emphasis> and{" "}
+            <Emphasis>addressing tech debt</Emphasis> (cut Webpack build time in
+            half, enforcing code standards, updating legacy React codebase). Led
+            a major <Emphasis>redesign effort</Emphasis> of the product
+            (implementing specs by creating maintainable, reusable components).
+            Grew into a <Emphasis>leadership role</Emphasis> (mentoring new
+            hires, representing engineering concern in product meetings,
+            planning and executing / delegating necessary tasks).
           </li>
         </ul>
       </Job>
@@ -129,11 +132,12 @@ const BoxJobs = () => {
           <li>
             <em>My role:</em> Built new features{" "}
             <Emphasis>from back-end to front-end</Emphasis> (PDF generation,
-            Facebook API metrics gathering, mailing service). Proposed and
-            <Emphasis> gathered adhesion</Emphasis> for technical solutions to
-            our user's issues (implemented theming for PDFs). Addressed
-            maintenance issues (legacy PHP codebase). Participated in{" "}
-            <Emphasis>first-response</Emphasis> effort during crisis.
+            Facebook API metrics gathering, mailing service). Proposed solutions
+            to solve our user's issues and{" "}
+            <Emphasis>gathered technical consensus</Emphasis> (styles theming
+            for PDFs). Addressed maintenance issues (legacy PHP codebase).
+            Participated in <Emphasis>first-response</Emphasis> effort during
+            crisis.
           </li>
         </ul>
       </Job>
