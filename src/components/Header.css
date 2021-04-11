@@ -104,14 +104,11 @@ a:first-of-type {
   will-change: animation;
 }
 .theme-icon {
-  height: 1.2rem;
+  height: 1rem;
   position: relative;
   fill: var(--black);
   top: 8%;
   cursor: pointer;
-}
-.theme-icon.moon {
-  height: 1.5rem;
 }
 
 @media only screen and (max-width: 580px) {
@@ -142,7 +139,7 @@ a:first-of-type {
   }
   .theme-icon.moon {
     margin: 0;
-    height: 1.4rem;
+    height: 1.1rem;
     top: -90%;
   }
 }
