@@ -28,7 +28,7 @@ const moods = {
 
 const initialMood = {
   moodClassName: "",
-  moodText: "Writing",
+  moodText: "Writing & talking",
 }
 
 export const ThemingArticle = (
@@ -102,6 +102,20 @@ export const LocalizationArticle = (
     specific locale, and how to make it all easy with React’s context API.
   </MiniBoxProject>
 )
+export const DxIsUxArticle = (
+  <MiniBoxProject
+    project={{
+      name: "Upcoming: DX is UX",
+      type: "Talk",
+      date: "June 2-3, 2022",
+      link: "https://jsconfbp.com/speakers/mathieu-anderson/",
+    }}
+    techList={[{ name: "JavaScript", icon: <JavaScriptIcon /> }]}
+  >
+    Upcoming talk at JSConf Budapest 2022 about improving your developer
+    experience by adopting user experience principles.
+  </MiniBoxProject>
+)
 
 const BoxProjects = () => {
   const { mood } = React.useContext(MoodContext)
@@ -113,6 +127,7 @@ const BoxProjects = () => {
       moods={moods}
       currentMood={mood}
     >
+      {DxIsUxArticle}
       {ThemingArticle}
       {ReviewArticle}
       {TypesArticle}
