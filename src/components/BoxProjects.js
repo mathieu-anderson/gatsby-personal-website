@@ -105,15 +105,25 @@ export const LocalizationArticle = (
 export const DxIsUxArticle = (
   <MiniBoxProject
     project={{
-      name: "Upcoming: DX is UX",
+      name: "DX is UX",
       type: "Talk",
-      date: "June 2-3, 2022",
+      date: "June 3, 2022",
       link: "https://jsconfbp.com/speakers/mathieu-anderson/",
     }}
     techList={[{ name: "JavaScript", icon: <JavaScriptIcon /> }]}
   >
-    Upcoming talk at JSConf Budapest 2022 about improving your developer
-    experience by adopting user experience principles.
+    Talk at JSConf Budapest 2022 about improving your developer experience by
+    adopting user experience principles.
+    <ul style={{ marginTop: "calc(1.45rem / 2)" }}>
+      <li>
+        <a href="https://youtu.be/okYa03hhI3g?t=14343">See the talk</a> on
+        JSConf's YouTube channel.
+      </li>
+      <li>
+        <a href="https://dx-is-ux.matand.dev/">Go to the companion website</a>{" "}
+        with resources and the slides deck.
+      </li>
+    </ul>
   </MiniBoxProject>
 )
 
