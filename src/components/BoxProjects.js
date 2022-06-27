@@ -116,7 +116,7 @@ export const DxIsUxArticle = (
     adopting user experience principles.
     <ul style={{ marginTop: "calc(1.45rem / 2)" }}>
       <li>
-        <a href="https://youtu.be/okYa03hhI3g?t=14343">See the talk</a> on
+        <a href="https://youtu.be/s_9MnfNxqQs">See the talk</a> on
         JSConf's YouTube channel.
       </li>
       <li>
