@@ -11,6 +11,7 @@ import {
   SassIcon,
   NodeIcon,
   CssIcon,
+  ViteIcon,
 } from "../components/Icons"
 import Job from "../components/Job"
 import { MoodContext } from "../hooks/useMoodContext"
@@ -49,11 +50,57 @@ const BoxJobs = () => {
       <Job
         job={{
           link: (
+            <a title="Aiven" href="https://aiven.io/">
+              Aiven
+            </a>
+          ),
+          dates: "December 2022 - Now",
+          role: "Senior front-end engineer",
+        }}
+        techList={[
+          { name: "TypeScript", icon: <TypeScriptIcon /> },
+          { name: "React", icon: <ReactIcon /> },
+          { name: "CSS", icon: <CssIcon /> },
+          { name: "Vite", icon: <ViteIcon /> },
+          { name: "Git", icon: <GitIcon /> },
+        ]}
+      >
+        <ul>
+          <li>
+            <em>Who?</em> A unicorn startup offering a{" "}
+            <Emphasis>fully managed, open source cloud data platform</Emphasis>.
+          </li>
+          <li>
+            <em>What?</em> Part of the commitment of Aiven to open source
+            software is the{" "}
+            <Emphasis>
+              <a href="https://aiven.io/open-source-program-office">
+                Open source program office
+              </a>
+            </Emphasis>{" "}
+            (OSPO), which is a team of Aiven employees working full-time on
+            maintaining the projects offered as managed services.
+          </li>
+          <li>
+            <em>My role:</em> As part of the OSPO, I joined the{" "}
+            <a href="https://github.com/aiven/klaw">Klaw</a> project's team.
+            Currently focusing on <Emphasis>migrating the front-end</Emphasis>{" "}
+            from Angular 1 to React. This includes:{" "}
+            <Emphasis>making architectural decision</Emphasis> with high
+            emphasis on maintainability and accessibility, collaborating closely
+            with backend engineers to{" "}
+            <Emphasis>improve the API design</Emphasis> of the project.
+          </li>
+        </ul>
+      </Job>
+      <Job
+        job={{
+          link: (
             <a title="Talon.one" href="https://talon.one/">
               Talon.One
             </a>
           ),
-          dates: "January 2019 - Now",
+          dates: "January 2019 - November 2022",
           role: "Front-end developer",
         }}
         techList={[

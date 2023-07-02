@@ -12,6 +12,7 @@ import {
   SassIcon,
   NodeIcon,
   CssIcon,
+  ViteIcon,
 } from "../components/Icons"
 import { MoodContext } from "../hooks/useMoodContext"
 
@@ -124,6 +125,16 @@ const BoxTech = () => {
             frequency: "every day (as bundler of all my projects)",
             like:
               "the amount of control it gives over a build and the excellent developer experience it enables",
+          }}
+        />
+        <Pill
+          name="Vite"
+          icon={<ViteIcon />}
+          details={{
+            since: "2022",
+            frequency: "every day",
+            like:
+              "the native ES modules making builds and rebuilds lightning fast, and the simplicity of configuration",
           }}
         />
         <Pill
