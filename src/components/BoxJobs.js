@@ -72,7 +72,7 @@ const BoxJobs = () => {
           </li>
           <li>
             <em>What?</em> Aiven is committed to open source software, and
-            therefore has an
+            therefore has an{" "}
             <Emphasis>
               <a href="https://aiven.io/open-source-program-office">
                 Open source program office
