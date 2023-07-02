@@ -29,15 +29,15 @@ button {
 }
 
 .header-social a {
- margin-left: 1rem;
- border: 0;
+  margin-left: 1rem;
+  border: 0;
 }
 
 a:first-of-type {
   margin-left: 0;
 }
 
-.header-mood-and-theme  {
+.header-mood-and-theme {
   display: flex;
   flex-flow: row nowrap;
   align-self: flex-start;
@@ -51,10 +51,10 @@ a:first-of-type {
   margin-left: 1rem;
 }
 
-
 .header-mood-and-theme > .mood-buttons > button {
   cursor: pointer;
   padding-bottom: 0.2rem;
+  transition: color 0.1s;
 }
 
 .header-mood-and-theme > .mood-buttons > button:hover {
@@ -71,26 +71,26 @@ a:first-of-type {
 }
 .openminded-mood:hover {
   color: var(--openminded);
-  box-shadow: inset 0 -1px 0 var(--openminded)
+  box-shadow: inset 0 -1px 0 var(--openminded);
 }
 .enthusiastic-mood:hover {
   color: var(--enthusiastic);
-  box-shadow: inset 0 -1px 0 var(--enthusiastic)
+  box-shadow: inset 0 -1px 0 var(--enthusiastic);
 }
 
-.default-active{
+.default-active {
   color: var(--black);
   box-shadow: inset 0 -2px 0 var(--black) !important;
 }
-.curious-active{
+.curious-active {
   color: var(--curious);
   box-shadow: inset 0 -2px 0 var(--curious) !important;
 }
-.openminded-active{
+.openminded-active {
   color: var(--openminded);
   box-shadow: inset 0 -2px 0 var(--openminded) !important;
 }
-.enthusiastic-active{
+.enthusiastic-active {
   color: var(--enthusiastic);
   box-shadow: inset 0 -2px 0 var(--enthusiastic) !important;
 }
@@ -135,7 +135,6 @@ a:first-of-type {
     margin: 0;
     height: 1.1rem;
     top: -100%;
-
   }
   .theme-icon.moon {
     margin: 0;
