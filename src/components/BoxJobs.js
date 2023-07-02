@@ -71,24 +71,29 @@ const BoxJobs = () => {
             <Emphasis>fully managed, open source cloud data platform</Emphasis>.
           </li>
           <li>
-            <em>What?</em> Part of the commitment of Aiven to open source
-            software is the{" "}
+            <em>What?</em> Aiven is committed to open source software, and
+            therefore has an
             <Emphasis>
               <a href="https://aiven.io/open-source-program-office">
                 Open source program office
               </a>
             </Emphasis>{" "}
-            (OSPO), which is a team of Aiven employees working full-time on
-            maintaining the projects offered as managed services.
+            (OSPO), which is a team of employees working full-time on
+            maintaining the projects we depend on. As part of the OSPO, I joined
+            the <a href="https://github.com/aiven/klaw">Klaw</a> project's team.
+            Klaw is a self-service Apache Kafka® governance tool, allowing users
+            to implement secure workflows to manage their Apache Kafka®
+            clusters.
           </li>
           <li>
-            <em>My role:</em> As part of the OSPO, I joined the{" "}
-            <a href="https://github.com/aiven/klaw">Klaw</a> project's team.
-            Currently focusing on <Emphasis>migrating the front-end</Emphasis>{" "}
-            from Angular 1 to React. This includes:{" "}
+            <em>My role: </em>
+            Currently focusing on <Emphasis>
+              migrating the front-end
+            </Emphasis>{" "}
+            from Angular 1 to React 18. This includes:{" "}
             <Emphasis>making architectural decision</Emphasis> with high
             emphasis on maintainability and accessibility, collaborating closely
-            with backend engineers to{" "}
+            with back-end engineers to{" "}
             <Emphasis>improve the API design</Emphasis> of the project.
           </li>
         </ul>
