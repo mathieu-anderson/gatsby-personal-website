@@ -1,5 +1,5 @@
 import React from "react"
-import { GithubIcon, MediumIcon, TwitterIcon, LinkedinIcon } from "./Icons"
+import { GithubIcon, MediumIcon, LinkedinIcon } from "./Icons"
 import MoodContainer from "./MoodContainer"
 
 import "./Header.css"
@@ -222,7 +222,6 @@ const Header = () => {
         <div className="header-social">
           <GithubIcon link="https://github.com/mathieu-anderson" />
           <MediumIcon />
-          <TwitterIcon />
           <LinkedinIcon />
         </div>
         <div className="header-mood-and-theme">

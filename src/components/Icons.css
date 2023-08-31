@@ -11,16 +11,9 @@ svg.social-icon {
   will-change: animation;
 }
 
-.social-link:hover .twitter {
-  transition: 0.1s all;
-  fill: #00acee;
-  animation: miniLift 0.1s;
-  will-change: animation;
-}
-
 .social-link:hover .medium {
   transition: 0.1s all;
-  fill: #00AB6B;
+  fill: #00ab6b;
   animation: miniLift 0.1s;
   will-change: animation;
 }
@@ -43,7 +36,7 @@ svg.social-icon {
 
 .tech-icon {
   transition: 0.2s all;
-  height: 1.2rem
+  height: 1.2rem;
 }
 
 @media only screen and (max-width: 580px) {
@@ -51,4 +44,3 @@ svg.social-icon {
     height: 1.2rem;
   }
 }
-
