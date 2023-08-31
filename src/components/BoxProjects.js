@@ -116,14 +116,32 @@ export const DxIsUxArticle = (
     adopting user experience principles.
     <ul style={{ marginTop: "calc(1.45rem / 2)" }}>
       <li>
-        <a href="https://youtu.be/s_9MnfNxqQs">See the talk</a> on
-        JSConf's YouTube channel.
+        <a href="https://youtu.be/s_9MnfNxqQs">See the talk</a> on JSConf's
+        YouTube channel.
       </li>
       <li>
         <a href="https://dx-is-ux.matand.dev/">Go to the companion website</a>{" "}
         with resources and the slides deck.
       </li>
     </ul>
+  </MiniBoxProject>
+)
+export const FormsArticle = (
+  <MiniBoxProject
+    project={{
+      name: "TypeScript, react-hook-form, zod: blissful forms",
+      type: "Guide",
+      date: "August 8, 2023",
+      link: "https://aiven.io/blog/typescript-react-hook-form-zod",
+    }}
+    techList={[
+      { name: "TypeScript", icon: <TypeScriptIcon /> },
+      { name: "React", icon: <ReactIcon /> },
+    ]}
+  >
+    A walkthrough of the technical choices the{" "}
+    <a href="https://github.com/Aiven-Open/klaw">Klaw</a> project team has made
+    to create reliable, composable and delightful web forms.
   </MiniBoxProject>
 )
 
@@ -137,6 +155,7 @@ const BoxProjects = () => {
       moods={moods}
       currentMood={mood}
     >
+      {FormsArticle}
       {DxIsUxArticle}
       {ThemingArticle}
       {ReviewArticle}
