@@ -144,6 +144,31 @@ export const FormsArticle = (
     to create reliable, composable and delightful web forms.
   </MiniBoxProject>
 )
+export const OsDevTalk = (
+  <MiniBoxProject
+    project={{
+      name: "Being an open source React developer",
+      type: "Talk",
+      date: "October 25, 2023",
+      link:
+        "https://www.linkedin.com/posts/gitnation_hey-berlin-folks-mark-the-dateoctober-activity-7120447484878868480-XAGZ?utm_source=share&utm_medium=member_desktop",
+    }}
+    techList={[
+      { name: "Git", icon: <GitIcon /> },
+      { name: "React", icon: <ReactIcon /> },
+    ]}
+  >
+    A talk about how, where and why to contribute to open source projects as a
+    developer who likes using React.{" "}
+    <ul style={{ marginTop: "calc(1.45rem / 2)" }}>
+      <li>
+        <a href="react-os-dev.pdf" download>
+          Download the slides (pdf).
+        </a>
+      </li>
+    </ul>
+  </MiniBoxProject>
+)
 
 const BoxProjects = () => {
   const { mood } = React.useContext(MoodContext)
@@ -155,6 +180,7 @@ const BoxProjects = () => {
       moods={moods}
       currentMood={mood}
     >
+      {OsDevTalk}
       {FormsArticle}
       {DxIsUxArticle}
       {ThemingArticle}
