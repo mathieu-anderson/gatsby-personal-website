@@ -1,20 +1,22 @@
 import React from "react"
-import Box from "./Box"
 import {
-  TypeScriptIcon,
+  CssIcon,
+  DockerIcon,
+  GitIcon,
+  JavaScriptIcon,
+  NextIcon,
+  NodeIcon,
   ReactIcon,
   ReduxIcon,
-  WebpackIcon,
-  GitIcon,
-  DockerIcon,
-  JavaScriptIcon,
   SassIcon,
-  NodeIcon,
-  CssIcon,
+  StyledcomponentsIcon,
+  TypeScriptIcon,
   ViteIcon,
+  WebpackIcon,
 } from "../components/Icons"
 import Job from "../components/Job"
 import { MoodContext } from "../hooks/useMoodContext"
+import Box from "./Box"
 import Emphasis from "./Emphasis"
 
 const moods = {
@@ -54,47 +56,29 @@ const BoxJobs = () => {
               Remote
             </a>
           ),
-          dates: "December 2022 - Now",
+          dates: "April 2024 - Now",
           role: "Senior frontend engineer",
         }}
         techList={[
+          { name: "JavaScript", icon: <JavaScriptIcon /> },
           { name: "TypeScript", icon: <TypeScriptIcon /> },
           { name: "React", icon: <ReactIcon /> },
-          { name: "CSS", icon: <CssIcon /> },
-          { name: "Vite", icon: <ViteIcon /> },
-          { name: "Git", icon: <GitIcon /> },
+          { name: "Next", icon: <NextIcon /> },
+          { name: "Styled components", icon: <StyledcomponentsIcon /> },
         ]}
       >
         <ul>
           <li>
-            <em>Who?</em> A unicorn startup offering a{" "}
-            <Emphasis>fully managed, open source cloud data platform</Emphasis>.
+            <em>Who?</em> A fast growing unicorn startup offering a{" "}
+            <Emphasis>global HR platform</Emphasis>.
           </li>
           <li>
-            <em>What?</em> Aiven is committed to open source software, and
-            therefore has an{" "}
-            <Emphasis>
-              <a href="https://aiven.io/open-source-program-office">
-                Open source program office
-              </a>
-            </Emphasis>{" "}
-            (OSPO), which is a team of employees working full-time on
-            maintaining the projects we depend on. As part of the OSPO, I joined
-            the <a href="https://github.com/aiven/klaw">Klaw</a> project's team.
-            Klaw is a self-service Apache Kafka® governance tool, allowing users
-            to implement secure workflows to manage their Apache Kafka®
-            clusters.
+            <em>What?</em> A yet undisclosed greenfield project.
           </li>
           <li>
             <em>My role: </em>
-            Currently focusing on <Emphasis>
-              migrating the frontend
-            </Emphasis>{" "}
-            from Angular 1 to React 18. This includes:{" "}
-            <Emphasis>making architectural decision</Emphasis> with high
-            emphasis on maintainability and accessibility, collaborating closely
-            with back-end engineers to{" "}
-            <Emphasis>improve the API design</Emphasis> of the project.
+            Currently handling frontend architecture and early implementation,
+            optimizing for speed, delight, extensibility and maintainability.
           </li>
         </ul>
       </Job>
@@ -105,7 +89,7 @@ const BoxJobs = () => {
               Aiven
             </a>
           ),
-          dates: "December 2022 - Now",
+          dates: "December 2022 - April 2024",
           role: "Senior frontend engineer",
         }}
         techList={[

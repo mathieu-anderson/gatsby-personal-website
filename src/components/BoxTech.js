@@ -1,20 +1,22 @@
 import React from "react"
-import Box from "./Box"
-import Pill from "./Pill"
 import {
-  TypeScriptIcon,
+  CssIcon,
+  DockerIcon,
+  GitIcon,
+  JavaScriptIcon,
+  NextIcon,
+  NodeIcon,
   ReactIcon,
   ReduxIcon,
-  WebpackIcon,
-  GitIcon,
-  DockerIcon,
-  JavaScriptIcon,
   SassIcon,
-  NodeIcon,
-  CssIcon,
+  StyledcomponentsIcon,
+  TypeScriptIcon,
   ViteIcon,
+  WebpackIcon,
 } from "../components/Icons"
 import { MoodContext } from "../hooks/useMoodContext"
+import Box from "./Box"
+import Pill from "./Pill"
 
 const moods = {
   enthusiastic: {
@@ -78,6 +80,16 @@ const BoxTech = () => {
           }}
         />
         <Pill
+          name="Next"
+          icon={<NextIcon />}
+          details={{
+            since: "2024",
+            frequency: "every day",
+            like:
+              "The powerful features of a meta-framework allowing to standardise processes for large codebases with many contributors",
+          }}
+        />
+        <Pill
           name="Redux"
           icon={<ReduxIcon />}
           details={{
@@ -104,6 +116,16 @@ const BoxTech = () => {
             frequency: "only in side projects",
             like:
               "the flexibility to be used in the frontend and the back-end, the speed and ease of development",
+          }}
+        />
+        <Pill
+          name="Styled components"
+          icon={<StyledcomponentsIcon />}
+          details={{
+            since: "2024",
+            frequency: "every day",
+            like:
+              "the ability to tightly scope styles to single components, and to compose them without hassle",
           }}
         />
         <Pill

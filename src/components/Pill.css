@@ -354,3 +354,53 @@
 .open.vite-pill .vite-icon {
   fill: var(--vite);
 }
+.next-pill {
+  border: 2px solid var(--black);
+  background-color: var(--white);
+}
+.next-pill .next-icon {
+  fill: var(--black);
+}
+.next-pill:hover {
+  transition: 0.2s ease-in-out;
+  border: 2px solid var(--black);
+  color: var(--black);
+  box-shadow: 6px 6px 0px var(--black);
+}
+.next-pill:hover .next-icon {
+  transition: 0.2s ease-in-out;
+  fill: var(--black);
+}
+.open.next-pill {
+  border: 2px solid var(--black);
+  color: var(--black);
+  box-shadow: 6px 6px 0px var(--black);
+}
+.open.next-pill .next-icon {
+  fill: var(--black);
+}
+.styled.components-pill {
+  border: 2px solid var(--black);
+  background-color: var(--white);
+}
+.styled.components-pill .styled.components-icon {
+  fill: var(--black);
+}
+.styled.components-pill:hover {
+  transition: 0.2s ease-in-out;
+  border: 2px solid var(--styled);
+  color: var(--styled);
+  box-shadow: 6px 6px 0px var(--styled);
+}
+.styled.components-pill:hover .styled.components-icon {
+  transition: 0.2s ease-in-out;
+  fill: var(--styled);
+}
+.open .styled.components-pill {
+  border: 2px solid var(--styled);
+  color: var(--styled);
+  box-shadow: 6px 6px 0px var(--styled);
+}
+.open.next-pill .next-icon {
+  fill: var(--styled);
+}

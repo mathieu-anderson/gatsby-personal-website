@@ -399,3 +399,65 @@
 .open.vite-minipill .vite-icon {
   fill: var(--vite);
 }
+
+.next-minipill {
+  border: 2px solid var(--black);
+  background-color: var(--white);
+}
+.next-minipill .next-icon {
+  fill: var(--black);
+}
+.next-minipill:hover {
+  transition: 0.2s all;
+  border: 2px solid var(--black);
+  color: var(--black);
+  box-shadow: 4px 4px 0px var(--black);
+}
+.next-minipill:hover .next-icon {
+  transition: 0.2s all;
+  fill: var(--black);
+}
+.open.next-minipill {
+  border: 2px solid var(--black);
+  color: var(--black);
+  box-shadow: 4px 4px 0px var(--black);
+}
+
+.open.next-minipill .minipill-name {
+  color: var(--black);
+}
+
+.open.next-minipill .next-icon {
+  fill: var(--black);
+}
+
+.styled.components-minipill {
+  border: 2px solid var(--black);
+  background-color: var(--white);
+}
+.styled.components-minipill .styled.components-icon {
+  fill: var(--black);
+}
+.styled.components-minipill:hover {
+  transition: 0.2s all;
+  border: 2px solid var(--styled);
+  color: var(--styled);
+  box-shadow: 4px 4px 0px var(--styled);
+}
+.styled.components-minipill:hover .styled.components-icon {
+  transition: 0.2s all;
+  fill: var(--styled);
+}
+.open.styled.components-minipill {
+  border: 2px solid var(--styled);
+  color: var(--styled);
+  box-shadow: 4px 4px 0px var(--styled);
+}
+
+.open.styled.components-minipill .minipill-name {
+  color: var(--styled);
+}
+
+.open.styled.components-minipill .styled components-icon {
+  fill: var(--styled);
+}
