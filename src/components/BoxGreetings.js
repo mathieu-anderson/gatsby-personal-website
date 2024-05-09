@@ -34,7 +34,7 @@ const BoxGreetings = () => {
     >
       <div className="greetings-container">
         <p>
-          I'm a <Emphasis>front-end</Emphasis> specialist. Love being part of
+          I'm a <Emphasis>frontend</Emphasis> specialist. Love being part of
           cross-functional teams and working with product owners to be the{" "}
           <Emphasis>logical glue</Emphasis> between the back-end devs and the
           designers.

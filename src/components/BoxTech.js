@@ -54,7 +54,7 @@ const BoxTech = () => {
             since: "2016",
             frequency: "every day",
             like:
-              "the flexibility to be used in the front-end and the back-end, the speed and ease of development",
+              "the flexibility to be used in the frontend and the back-end, the speed and ease of development",
           }}
         />
         <Pill
@@ -103,7 +103,7 @@ const BoxTech = () => {
             since: "2016",
             frequency: "only in side projects",
             like:
-              "the flexibility to be used in the front-end and the back-end, the speed and ease of development",
+              "the flexibility to be used in the frontend and the back-end, the speed and ease of development",
           }}
         />
         <Pill

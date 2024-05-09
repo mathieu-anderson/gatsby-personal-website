@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Mathieu Anderson is a web dev`,
-    description: `Mathieu Anderson is a front-end web dev. You can find everything you want to know about him here! Looking forward to making your acquaintance.`,
+    description: `Mathieu Anderson is a frontend web dev. You can find everything you want to know about him here! Looking forward to making your acquaintance.`,
     author: `@syllaband`,
   },
   plugins: [
