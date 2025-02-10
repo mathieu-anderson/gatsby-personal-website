@@ -1,5 +1,4 @@
-[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-blue?style=flat-square&logo=codesandbox)](https://githubbox.com/mathieu-anderson/gatsby-personal-website)
-
+[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-blue?style=flat-square&logo=codesandbox)](https://githubbox.com/mathieu-anderson/gatsby-personal-website) [![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/mathieu-anderson/gatsby-personal-website)
 # My digital home : [matand.dev](https://matand.dev/)
 
 This is a remake of [the old Svelte version](https://old-svelte-version-of-website.netlify.com/) of my personal website. I used [Gatsby](https://www.gatsbyjs.org/) this time around, because I am far more comfortable with [React](https://reactjs.org/) than I ever was with [Svelte](https://svelte.dev/), and Gatsby lets me create a static web page (all I need) with the tools I'm confortable with.
