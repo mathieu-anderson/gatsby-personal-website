@@ -108,7 +108,7 @@ export const DxIsUxArticle = (
       name: "DX is UX",
       type: "Talk",
       date: "June 3, 2022",
-      link: "https://jsconfbp.com/speakers/mathieu-anderson/",
+      link: "https://2022.jsconfbp.com/speakers/mathieu-anderson",
     }}
     techList={[{ name: "JavaScript", icon: <JavaScriptIcon /> }]}
   >
